@@ -14,63 +14,75 @@
 
 <body>
     <!-- RESAL HEADER  -->
-    <header
-        class="fixed z-50 top-10 start-10 end-10 rounded-full bg-Component-Fill-NavigationBar backdrop-blur-[10px] shadow-main-header border border-Component-Stroke-NavigationBar">
-        <div class="flex items-center justify-between gap-3 py-4 px-10">
+    <header class="fixed z-50 top-10 px-10 w-full">
+        <div
+            class="container flex items-center justify-between gap-3 ps-6 p-2 lg:py-4 lg:px-10 rounded-full bg-Component-Fill-NavigationBar lg:backdrop-blur-[10px] shadow-main-header border border-Component-Stroke-NavigationBar">
             <a href="index.html">
                 <img src="assets/images/logo.svg" width="111" height="28" alt="Resal">
                 <span class="sr-only">RESAL LOGO</span>
             </a>
 
-            <nav class="res-nav">
-                <ul class="res-nav-list">
-                    <li class="res-nav-item">
-                        <a href="#" class="res-nav-link">
-                            For Businesses
-                        </a>
-                    </li>
-                    <li class="res-nav-item">
-                        <a href="#" class="res-nav-link">
-                            Individuals
-                        </a>
-                    </li>
-                    <li class="res-nav-item">
-                        <a href="#" class="res-nav-link">
-                            Resources
-                        </a>
-                    </li>
-                    <li class="res-nav-item">
-                        <a href="#" class="res-nav-link">
-                            About Resal
-                        </a>
-                    </li>
-                    <li class="res-nav-item">
-                        <a href="#" class="res-nav-link">
-                            Partners
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="flex items-center gap-2">
+            <div class="mobile-menu">
+                <nav class="res-nav grow flex items-center justify-center w-full">
+                    <ul class="res-nav-list">
+                        <li class="res-nav-item">
+                            <a href="#" class="res-nav-link">
+                                For Businesses
+                            </a>
+                        </li>
+                        <li class="res-nav-item">
+                            <a href="#" class="res-nav-link">
+                                Individuals
+                            </a>
+                        </li>
+                        <li class="res-nav-item">
+                            <a href="#" class="res-nav-link">
+                                Resources
+                            </a>
+                        </li>
+                        <li class="res-nav-item">
+                            <a href="#" class="res-nav-link">
+                                About Resal
+                            </a>
+                        </li>
+                        <li class="res-nav-item">
+                            <a href="#" class="res-nav-link">
+                                Partners
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div
-                    class="p-3 text-white font-medium rounded-full bg-Component-Fill-Dropdown leading-none border border-Component-Stroke-Dropdown shadow-Component-Dropdown flex items-center gap-2 cursor-pointer">
-                    <span class=" flex items-center gap-4">
-                        <img src="assets/images/englishflag.svg" width="24" height="24" alt="English">
-                        <span class="pt-1">
-                            English
+                    class="flex items-center gap-4 lg:gap-2 shrink-0 w-full lg:w-auto py-10 lg:py-0 border-t border-[#ffffff66] lg:border-none">
+                    <div
+                        class="grow p-3 text-white font-medium rounded-full bg-Component-Fill-Dropdown leading-none border border-Component-Stroke-Dropdown shadow-Component-Dropdown flex items-center justify-center gap-2 cursor-pointer">
+                        <span class=" flex items-center gap-4">
+                            <img src="assets/images/englishflag.svg" width="24" height="24" alt="English">
+                            <span class="pt-1">
+                                English
+                            </span>
                         </span>
-                    </span>
-                    <img src="assets/images/icons/drop-down-arrow.svg" width="24" height="24" alt="Arrow">
+                        <img src="assets/images/icons/drop-down-arrow.svg" width="24" height="24" alt="Arrow">
+                    </div>
+                    <a href="#"
+                        class="grow flex items-center justify-center gap-4 text-Neutral-Black font-medium leading-none bg-Button-Fill-Primary shadow-Button-Fill-Primary px-4 py-3 rounded-full border border-white">
+                        <span class="pt-1">
+                            Register
+                        </span>
+                        <img src="assets/images/icons/arrow-right.svg" width="24" height="24" alt="Arrow">
+                    </a>
                 </div>
-                <a href="#"
-                    class="flex items-center gap-4 text-Neutral-Black font-medium leading-none bg-Button-Fill-Primary shadow-Button-Fill-Primary px-4 py-3 rounded-full border border-white">
-                    <span class="pt-1">
-                        Register
-                    </span>
-                    <img src="assets/images/icons/arrow-right.svg" width="24" height="24" alt="Arrow">
-                </a>
             </div>
+            <button class="lg:hidden p-4 mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M18 18L6 6.00001" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+                <span class="sr-only">Menu</span>
+            </button>
         </div>
     </header>
     <!-- END RESAL HEADER  -->
@@ -80,39 +92,47 @@
     <!-- RESAL MAIN PAGE CONTENT  -->
     <main>
         <!-- RESAL HERO SECTION  -->
-        <section class="hero-section flex flex-col relative overflow-hidden">
+        <section class="hero-section flex flex-col relative overflow-hidden px-5 lg:px-0">
 
-            <div class="container grid lg:grid-cols-12 grow items-center">
-                <div class="flex flex-col gap-10 lg:col-span-7 items-start">
-                    <h1 class="text-white text-[64px] font-medium leading-[109%] font-Grotesk tracking-[0.48px]">
+            <div class="container grid lg:grid-cols-12 grow relative">
+                <div class="flex flex-col gap-10 lg:col-span-7 items-center lg:items-start pt-40 pb-10 z-[1]">
+
+                    <h1
+                        class="text-white text-[32px] lg:text-[64px] font-medium lg:leading-[109%] leading-[109%] font-Grotesk tracking-[0.48px] mt-auto text-center lg:text-start">
                         Digital Value The New Face of Alternative Payment Methods
                     </h1>
+
                     <a href="#"
-                        class="flex items-center gap-4 text-Neutral-Black font-medium leading-none bg-Button-Fill-Primary shadow-Button-Fill-Primary p-5 rounded-full">
+                        class="flex items-center gap-4 text-Neutral-Black font-medium leading-none bg-Button-Fill-Primary shadow-Button-Fill-Primary px-4 py-3 lg:p-5 rounded-full">
                         <span class="pt-1">
                             Business Solutions
                         </span>
                         <img src="assets/images/icons/arrow-right.svg" width="24" height="24" alt="Arrow">
                     </a>
+
+                    <div
+                        class="mt-auto p-10 rounded-3xl flex flex-col gap-6  items-center lg:items-start bg-hero-box shadow-Component-Dropdown max-w-[640px]">
+                        <p class="text-Neutral-Light-Grey font-light">
+                            A leading Saudi company that enables individuals, companies and merchants to take full
+                            advantage of
+                            the digital value of prepaid cards and rewards and loyalty programs through innovative
+                            technical
+                            solutions
+                        </p>
+                        <a href="#" class="text-white leading-none font-medium flex items-center gap-4">
+                            Learn More
+                            <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24" alt="arrow">
+                        </a>
+                    </div>
                 </div>
-                <div class="lg:col-span-5 min-h-screen relative">
-                    <img src="assets/images/hero-hand.svg" width="1334" height="891" alt="Hand"
-                        class="relative end-3/4 w-auto min-h-screen max-w-max rtl:-rotate-180 origin-top	">
+                <div class="lg:col-span-5 min-h-[555px] lg:min-h-screen relative">
+                    <img src="assets/images/hero-hand.png" width="1045" height="851" alt="Hand"
+                        class="absolute bottom-0 end-2/3 translate-x-1/2 lg:translate-x-0 lg:-end-[70px] w-full max-w-max min-w-[650px] lg:w-[1045px]">
+                    <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
+                        class="absolute bottom-[210px] right-0">
                 </div>
             </div>
 
-            <div
-                class="absolute bottom-10 start-10 p-10 rounded-3xl flex flex-col gap-6 items-start bg-hero-box w-[640px]">
-                <p class="text-Neutral-Light-Grey font-light">
-                    A leading Saudi company that enables individuals, companies and merchants to take full advantage of
-                    the digital value of prepaid cards and rewards and loyalty programs through innovative technical
-                    solutions
-                </p>
-                <a href="#" class="text-white leading-none font-medium flex items-center gap-4">
-                    Learn More
-                    <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24" alt="arrow">
-                </a>
-            </div>
         </section>
         <!-- END HERO SECTION   -->
 
@@ -130,12 +150,8 @@
                     </h2>
                     <div class="">
                         <div class="relative h-[542px]">
-                            <img src="assets/images/circle.svg" width="1280" height="1280" alt="circle"
-                                class="absolute bottom-0 left-1/2 -translate-x-1/2">
-                            <img src="assets/images/circle.svg" width="960" height="960" alt="circle"
-                                class="absolute bottom-0 left-1/2 -translate-x-1/2">
-                            <img src="assets/images/circle.svg" width="680" height="680" alt="circle"
-                                class="absolute bottom-0 left-1/2 -translate-x-1/2">
+                            <img src="assets/images/categories-circle.png" width="1280" height="1280" alt="circle"
+                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
                         </div>
                         <div class="categories-container">
                             <!-- Category item  -->
@@ -223,11 +239,12 @@
                     </div>
                 </div>
 
-                <div class="grid lg: grid-cols-3 gap-10">
+                <div class="grid lg:grid-cols-3 gap-10">
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="text-center text-white text-8xl font-medium leading-none font-Grotesk relative">
                             +170k
-                            <span class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
+                            <span
+                                class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
                             </span>
                         </h3>
@@ -239,7 +256,8 @@
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="text-center text-white text-8xl font-medium leading-none font-Grotesk relative">
                             750
-                            <span class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
+                            <span
+                                class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
                             </span>
                         </h3>
@@ -251,7 +269,8 @@
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="text-center text-white text-8xl font-medium leading-none font-Grotesk relative">
                             +600
-                            <span class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
+                            <span
+                                class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
                             </span>
                         </h3>
@@ -259,7 +278,12 @@
                             Number of Partners
                         </p>
                     </div>
+                </div>
 
+                <div class="bg-Component-Fill-Card shadow-Category-card backdrop-blur-[10px] rounded-[40px] lg:p-20">
+                    <div class="flex flex-col gap-28">
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -269,8 +293,21 @@
 
 
         <!-- RESAL FEATURES SECTION  -->
-        <section>
+        <section class="py-[120px]">
+            <div class="container flex flex-col gap-[120px]">
+                <div class="flex flex-col gap-28">
+                    <h2
+                        class="text-center text-white text-5xl leading-[116%] tracking-[0.36px] font-medium font-Grotesk">
+                        Integrated Solutions for <br>
+                        The Individual and Business Sectors
+                    </h2>
+                    <div class="grid lg:grid-cols-2 gap-10">
+                        <div class="solution-itm">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- END FEATURES SECTION   -->
 
@@ -281,15 +318,195 @@
     <!-- ============================================================================== -->
 
     <!-- RESAL FOOTER  -->
-    <footer>
+    <footer class="resal-footer">
+        <img src="assets/images/footer-rect-1.png" width="770" height="820" alt="footer-rect"
+            class="absolute bottom-0 right-0">
+        <img src="assets/images/footer-rect-2.png" width="1004" height="856" alt="footer-rect"
+            class="absolute bottom-0 left-0">
+        <img src="assets/images/footer-rect-3.png" width="1202" height="806" alt="footer-rect"
+            class="absolute -top-0 right-0">
 
+        <div class="container grid lg:grid-cols-3 gap-14 lg:gap-[120px] relative">
+            <div class="col-span-1 flex flex-col gap-3 lg:gap-20 items-center lg:items-start">
+                <div class="flex flex-col gap-6 lg:gap-10 items-center lg:items-start">
+                    <img src="assets/images/logo.svg" width="111" height="28" alt="ResalLogo">
+                    <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
+                        There are many variations of Lorem Ipsum passages available
+                    </p>
+                    <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+                        <span class="text-Neutral-Light-Grey font-light">
+                            resal_me
+                        </span>
+                        <div class="footer-social-media">
+                            <a href="#" class="social-itm">
+                                <img src="assets/images/icons/fb.svg" width="24" height="24" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-itm">
+                                <img src="assets/images/icons/x.svg" width="24" height="24" alt="X">
+                            </a>
+                            <a href="#" class="social-itm">
+                                <img src="assets/images/icons/linkedin.svg" width="24" height="24" alt="Linkedin.svg">
+                            </a>
+                            <a href="#" class="social-itm">
+                                <img src="assets/images/icons/instagram.svg" width="24" height="24" alt="Instagram.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scan-code-sec">
+                    <div class="qr-code">
+                        <img src="assets/images/icons/icon-container.svg" width="100" height="100" alt="icon-container"
+                            class="icon-shape">
+                        <img src="assets/images/qr-code.png" width="64" height="64" alt="qrcode">
+                    </div>
+                    <p class=" text-Neutral-Light-Grey font-light text-center">
+                        Scan the barcode and download <br>
+                        the Resal App
+
+                    </p>
+                    <div class=" text-Neutral-Light-Grey font-light text-center">
+                        Resal is available for use <br>
+                        in Saudi Arabia, the UAE and Kuwait
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 lg:col-span-2 flex flex-col gap-14 lg:gap-[116px]">
+                <div class="grid lg:grid-cols-3 gap-10 lg:gap-y-20">
+                    <div class="flex flex-col gap-6 items-center lg:items-stretch">
+                        <p
+                            class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
+                            Resal
+                        </p>
+                        <ul class="flex flex-col gap-6 items-center lg:items-stretch">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Resal Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Our Partners
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Join the Message
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6 items-center lg:items-stretch">
+                        <p
+                            class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
+                            Resal Products
+                        </p>
+                        <ul class="flex flex-col gap-6 items-center lg:items-stretch">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Letter to Institutions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Message for Merchants
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Resal Application
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6 items-center lg:items-stretch">
+                        <p
+                            class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
+                            Sources
+                        </p>
+                        <ul class="flex flex-col gap-6 items-center lg:items-stretch">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6 items-center lg:items-stretch">
+                        <p
+                            class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
+                            Privacy Policy
+                        </p>
+                        <ul class="flex flex-col gap-6 items-center lg:items-stretch">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6 items-center lg:items-stretch">
+                        <p
+                            class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
+                            Services
+                        </p>
+                        <ul class="flex flex-col gap-6 items-center lg:items-stretch">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    Text as an Example
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-6 lg:gap-10">
+                    <span class="fotter-copy-divider"></span>
+                    <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
+                        © 2024 All rights reserved to Resal Al-Wad Company
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- END RESAL FOOTER  -->
 
     <!-- ============================================================================== -->
-
     <!-- SCRIPTS  -->
+    <script src="assets/js/jquiry.js"></script>
     <script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>
