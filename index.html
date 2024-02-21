@@ -8,20 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Resal - Home Page</title>
 </head>
 
 <body>
     <!-- RESAL HEADER  -->
-    <header class="fixed z-50 top-10 px-10 w-full">
-        <div
-            class="container flex items-center justify-between gap-3 ps-6 p-2 lg:py-4 lg:px-10 rounded-full bg-Component-Fill-NavigationBar lg:backdrop-blur-[10px] shadow-main-header border border-Component-Stroke-NavigationBar">
-            <a href="index.html">
-                <img src="assets/images/logo.svg" width="111" height="28" alt="Resal">
-                <span class="sr-only">RESAL LOGO</span>
-            </a>
-
+    <header class="resal-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg" class="w-20 lg:w-auto" width="111" height="28" alt="Resal">
+                    <span class="sr-only">RESAL LOGO</span>
+                </a>
+                <button
+                    class="lg:hidden p-3 mobile-menu-btn bg-Button-Stroke-Button-Icon shadow-Component-Dropdown bg-Button-Fill-Button-Icon rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M18 18L6 6.00001" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
             <div class="mobile-menu">
                 <nav class="res-nav grow flex items-center justify-center w-full">
                     <ul class="res-nav-list">
@@ -73,16 +85,7 @@
                     </a>
                 </div>
             </div>
-            <button class="lg:hidden p-4 mobile-menu-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" />
-                </svg>
-                <svg class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18M18 18L6 6.00001" stroke="white" stroke-width="2" stroke-linecap="round" />
-                </svg>
 
-                <span class="sr-only">Menu</span>
-            </button>
         </div>
     </header>
     <!-- END RESAL HEADER  -->
@@ -96,7 +99,6 @@
 
             <div class="container grid lg:grid-cols-12 grow relative">
                 <div class="flex flex-col gap-10 lg:col-span-7 items-center lg:items-start pt-40 pb-10 z-[1]">
-
                     <h1
                         class="text-white text-[32px] lg:text-[64px] font-medium lg:leading-[109%] leading-[109%] font-Grotesk tracking-[0.48px] mt-auto text-center lg:text-start">
                         Digital Value The New Face of Alternative Payment Methods
@@ -140,7 +142,7 @@
 
 
         <!-- RESAL CATEGORIES SECTION  -->
-        <section class="py-[120px]">
+        <section class="py-[120px] px-5 lg:px-0">
             <div class="container flex flex-col gap-[120px]">
                 <div class="flex flex-col gap-28">
                     <h2
@@ -149,31 +151,32 @@
                         We are Honored to be in Resal
                     </h2>
                     <div class="">
-                        <div class="relative h-[542px]">
+                        <div class="relative ">
                             <img src="assets/images/categories-circle.png" width="1280" height="1280" alt="circle"
-                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+                                class="w-full">
                         </div>
                         <div class="categories-container">
                             <!-- Category item  -->
                             <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-start">
+                                <div class="flex flex-col gap-10 items-center lg:items-start">
                                     <div class="category-icon">
                                         <img src="assets/images/icons/icon-container.svg" width="100" height="100"
                                             alt="icon-container" class="category-icon-shape">
                                         <img src="assets/images/icons/phone.svg" width="64" height="64" alt="Phone">
                                     </div>
                                     <div class="flex flex-col gap-4">
-                                        <h3 class="text-white text-2xl font-medium font-Grotesk">
+                                        <h3
+                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
                                             Resal Application
                                         </h3>
-                                        <p class="text-Neutral-Light-Grey font-light">
+                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
                                             The application of the largest digital cards platform, combining replacement
                                             and acquisition of loyalty programs and the purchase of digital cards
                                         </p>
                                     </div>
 
                                 </div>
-                                <a href="#" class="btn-secondary px-5 py-4">
+                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
                                     <span class="pt-1">
                                         Learn More
                                     </span>
@@ -184,23 +187,24 @@
 
                             <!-- Category item  -->
                             <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-start">
+                                <div class="flex flex-col gap-10 items-center lg:items-start">
                                     <div class="category-icon">
                                         <img src="assets/images/icons/icon-container.svg" width="100" height="100"
                                             alt="icon-container" class="category-icon-shape">
                                         <img src="assets/images/icons/bussiness.svg" width="64" height="64" alt="Phone">
                                     </div>
                                     <div class="flex flex-col gap-4">
-                                        <h3 class="text-white text-2xl font-medium font-Grotesk">
+                                        <h3
+                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
                                             Business Solutions
                                         </h3>
-                                        <p class="text-Neutral-Light-Grey font-light">
+                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
                                             Innovative digital solutions enable the establishments to send, track and
                                             manage digital bonuses to achieve the highest levels of efficiency
                                         </p>
                                     </div>
                                 </div>
-                                <a href="#" class="btn-secondary px-5 py-4">
+                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
                                     <span class="pt-1">
                                         Learn More
                                     </span>
@@ -211,23 +215,24 @@
 
                             <!-- Category item  -->
                             <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-start">
+                                <div class="flex flex-col gap-10 items-center lg:items-start">
                                     <div class="category-icon">
                                         <img src="assets/images/icons/icon-container.svg" width="100" height="100"
                                             alt="icon-container" class="category-icon-shape">
                                         <img src="assets/images/icons/merchant.svg" width="64" height="64" alt="Phone">
                                     </div>
                                     <div class="flex flex-col gap-4">
-                                        <h3 class="text-white text-2xl font-medium font-Grotesk">
+                                        <h3
+                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
                                             Merchant Solutions
                                         </h3>
-                                        <p class="text-Neutral-Light-Grey font-light">
+                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
                                             The best digital platform enables you to build a loyalty program for your
                                             brand to increase your sales and earn the loyalty of your customers
                                         </p>
                                     </div>
                                 </div>
-                                <a href="#" class="btn-secondary px-5 py-4">
+                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
                                     <span class="pt-1">
                                         Learn More
                                     </span>
@@ -280,9 +285,50 @@
                     </div>
                 </div>
 
-                <div class="bg-Component-Fill-Card shadow-Category-card backdrop-blur-[10px] rounded-[40px] lg:p-20">
-                    <div class="flex flex-col gap-28">
+                <div
+                    class="bg-Component-Fill-Card shadow-Category-card backdrop-blur-[10px] rounded-[40px] px-12 py-10 lg:p-20 relative min-h-[720px] flex flex-col gap-[120px] overflow-hidden">
+                    <img src="assets/images/cat-card.png" width="656" height="720" alt="categories"
+                        class="absolute end-0 bottom-0">
+                        
+                    <div class="flex flex-col gap-28 relative">
+                        <div class="grid grid-cols-1 lg:grid-cols-12">
+                            <div class="flex flex-col items-center lg:items-start gap-10 lg:col-span-4">
+                                <span class="resal-badge p-5 rounded-2xl">
+                                    Integrated Digital PORTFOLIO
+                                </span>
 
+                                <h3
+                                    class="text-white text-5xl leading-[116%] font-medium tracking-[ 0.36px] text-center lg:text-start">
+                                    The Most <br class="hidden lg:inline-block">Important Sources of Digital Value
+                                </h3>
+                            </div>
+                            <div class="lg:col-start-7 lg:col-span-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="swiper sources-slider overflow-visible px-10 lg:px-0" data-swiper-autoplay="2000">
+                            <div class="swiper-wrapper items-center z-10">
+                                <div class="swiper-slide">
+                                    Pre-paid <br>
+                                    Cards
+                                </div>
+                                <div class="swiper-slide">
+                                    Miles
+                                </div>
+                                <div class="swiper-slide">
+                                    Loyalty<br>
+                                    Points
+                                </div>
+                                <div class="swiper-slide">
+                                    Top-up
+                                </div>
+                                <div class="swiper-slide">
+                                    Deals &<br>
+                                    Promo Codes
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -307,6 +353,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
         <!-- END FEATURES SECTION   -->
@@ -505,6 +553,7 @@
     <!-- ============================================================================== -->
     <!-- SCRIPTS  -->
     <script src="assets/js/jquiry.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/scripts.js"></script>
 
 </body>
