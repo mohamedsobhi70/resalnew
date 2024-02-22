@@ -17,6 +17,17 @@ if ($(".sources-slider").length > 0) {
             autoplay: true,
             centerInsufficientSlides: true,
             centeredSlidesBounds: true,
+            breakpoints: {
+                0: {
+                    centeredSlides: true,
+                },
+                768: {
+                    centeredSlides: true,
+                },
+                1024: {
+                    centeredSlides: false,
+                },
+            },
         });
     });
 }
@@ -50,4 +61,21 @@ if ($(".awards-slider").length > 0) {
             },
         });
     });
+}
+
+
+// back to top 
+if ($("#back-top").length > 0) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 900) {
+            $('#back-top').fadeIn();
+        }
+        else {
+            $('#back-top').fadeOut();
+        }
+    })
+    $('.back-totop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 250);
+        return false;
+    })
 }
