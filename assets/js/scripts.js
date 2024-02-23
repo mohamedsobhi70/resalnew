@@ -1,8 +1,10 @@
 if ($(".mobile-menu-btn").length > 0) {
     $(".mobile-menu-btn").on("click", function () {
-        $(this).find("svg").toggleClass("hidden")
+        let path = document.getElementById('linePath');
+        var newPath = (path.getAttribute('d') === "M4 6H20M4 12H20M4 18H20") ? "M18 6L6 18M18 18L6 6.00001" : "M4 6H20M4 12H20M4 18H20";
+        gsap.fromTo(path, {attr: {d: path.getAttribute('d')}}, {duration: .4, attr: {d: newPath}});
         $(".mobile-menu").toggleClass("show");
-        $("body").toggleClass("overflow-hidden")
+        $("body").toggleClass("overflow-hidden");
     })
 }
 

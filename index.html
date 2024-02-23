@@ -17,25 +17,29 @@
     <!-- RESAL HEADER  -->
     <header class="resal-header">
         <div class="container header-container">
+
             <div class="logo-container">
+                <!-- Resal Logo  -->
                 <a href="index.html">
                     <img src="assets/images/logo.svg" class="w-20 lg:w-auto" width="111" height="28" alt="Resal">
                     <span class="sr-only">RESAL LOGO</span>
                 </a>
-                <button
-                    class="lg:hidden p-3 mobile-menu-btn bg-Button-Stroke-Button-Icon shadow-Component-Dropdown bg-Button-Fill-Button-Icon rounded-full">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                    <svg class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6L6 18M18 18L6 6.00001" stroke="white" stroke-width="2" stroke-linecap="round" />
+
+                <!-- Burgur Menu Button  -->
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="linePath" d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2"
+                            stroke-linecap="round">
+                        </path>
                     </svg>
                     <span class="sr-only">Menu</span>
                 </button>
             </div>
+
             <div class="mobile-menu">
-                <nav class="res-nav grow flex items-center justify-center w-full">
+                <img src="assets/images/circle-rect-1.png" width="1154" height="1154" alt="rectangle"
+                    class="absolute -bottom-[670px] -start-[630px]  max-w-max opacity-65 lg:hidden -z[1]">
+                <nav class="res-nav">
                     <ul class="res-nav-list">
                         <li class="res-nav-item">
                             <a href="#" class="res-nav-link">
@@ -64,10 +68,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div
-                    class="flex items-center gap-4 lg:gap-2 shrink-0 w-full lg:w-auto py-10 lg:py-0 border-t border-[#ffffff66] lg:border-none">
-                    <div
-                        class="grow p-3 text-white font-medium rounded-full bg-Component-Fill-Dropdown leading-none border border-Component-Stroke-Dropdown shadow-Component-Dropdown flex items-center justify-center gap-2 cursor-pointer">
+                <div class="language-container">
+                    <div class="language-menu">
                         <span class=" flex items-center gap-4">
                             <img src="assets/images/englishflag.svg" width="24" height="24" alt="English">
                             <span class="pt-1">
@@ -76,16 +78,15 @@
                         </span>
                         <img src="assets/images/icons/drop-down-arrow.svg" width="24" height="24" alt="Arrow">
                     </div>
-                    <a href="#"
-                        class="grow flex items-center justify-center gap-4 text-Neutral-Black font-medium leading-none bg-Button-Fill-Primary shadow-Button-Fill-Primary px-4 py-3 rounded-full border border-white">
+                    <a href="#" class="btn-primary px-4 py-3 gap-4 grow">
                         <span class="pt-1">
                             Register
                         </span>
                         <img src="assets/images/icons/arrow-right.svg" width="24" height="24" alt="Arrow">
                     </a>
                 </div>
-            </div>
 
+            </div>
         </div>
     </header>
     <!-- END RESAL HEADER  -->
@@ -94,6 +95,7 @@
 
     <!-- RESAL MAIN PAGE CONTENT  -->
     <main>
+
         <!-- RESAL HERO SECTION  -->
         <section class="hero-section">
             <div class="container grid lg:grid-cols-12 grow relative">
@@ -127,28 +129,31 @@
                     </div>
                 </div>
                 <div class="lg:col-span-5 min-h-[555px] lg:min-h-screen relative">
-
                     <img src="assets/images/hero-hand.png" width="1045" height="851" alt="Hand"
-                        class="absolute bottom-0 end-2/3 translate-x-1/2 lg:translate-x-0 lg:-end-[70px] w-full max-w-max min-w-[650px] lg:w-[1045px]">
+                        class="absolute bottom-0 -end-[20px] lg:-end-[100px] w-full max-w-max min-w-[650px] lg:w-[1045px]">
+
                     <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
-                        class="absolute bottom-[210px] right-0">
+                        class="absolute top-1/2 -translate-y-1/2 right-0">
+
                     <img src="assets/images/hero-icon-1.png" width="" height="" alt="hero-icon"
-                        class="absolute top-[40%] left-[176px]">
+                        class="absolute top-[33%] left-[15%] w-[62px] lg:w-auto">
+
                     <img src="assets/images/hero-icon-2.png" width="" height="" alt="hero-icon"
-                        class="absolute top-[42%] left-[430px]">
+                        class="absolute top-[36%] left-[70%] w-[68px] lg:w-auto">
+
                     <img src="assets/images/hero-icon-3.png" width="" height="" alt="hero-icon"
-                        class="absolute top-[48%] left-[36%]">
+                        class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[150px] lg:w-auto">
+
                     <img src="assets/images/hero-icon-4.png" width="" height="" alt="hero-icon"
-                        class="absolute top-[60%] left-[70px]">
+                        class="absolute top-[54%] left-[6%] w-[180px] lg:w-auto">
                     <img src="assets/images/hero-icon-5.png" width="" height="" alt="hero-icon"
-                        class="absolute top-[66%] left-[420px]">
+                        class="absolute top-[66%] left-[60%] w-[62px] lg:w-auto">
                 </div>
             </div>
         </section>
         <!-- END HERO SECTION   -->
 
         <!-- ========================================================================== -->
-
 
         <!-- RESAL CATEGORIES SECTION  -->
         <section class="py-14 lg:py-[120px] px-5 lg:px-0 relative overflow-hidden">
@@ -161,8 +166,8 @@
                         More than 600 Brands <br>
                         We are Honored to be in Resal
                     </h2>
-                    <div class="">
-                        <div class="relative ">
+                    <div class="flex flex-col">
+                        <div class="relative overflow-hidden pt-8 lg:pt-0">
                             <img src="assets/images/categories-circle.png" width="1280" height="1280" alt="circle"
                                 class="w-[150%] lg:w-full max-w-max relative left-1/2 -translate-x-1/2">
                             <div
@@ -171,22 +176,22 @@
                                     alt="Brands">
                             </div>
                             <div
-                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute top-[420px] start-[4%]">
+                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute top-[60%] start-[7%]">
                                 <img src="assets/images/brand-2.png" class="w-20 lg:w-[120px]" width="120" height="120"
                                     alt="Brands">
                             </div>
                             <div
-                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute bottom-[150px] start-[40%]">
+                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute top-[53%] start-[40%]">
                                 <img src="assets/images/brand-3.png" class="w-20 lg:w-[120px]" width="120" height="120"
                                     alt="Brands">
                             </div>
                             <div
-                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute bottom-[80px] start-[86%]">
+                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute top-[70%] start-[86%]">
                                 <img src="assets/images/brand-4.png" class="w-20 lg:w-[120px]" width="120" height="120"
                                     alt="Brands">
                             </div>
                             <div
-                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute -top-[4%] lg:top-[4%] start-[48%]">
+                                class="border border-[#333c4e66] flex items-center backdrop-blur-[20px] rounded-full p-2 absolute top-[4%] start-[48%]">
                                 <img src="assets/images/brand-5.png" class="w-20 lg:w-[120px]" width="120" height="120"
                                     alt="Brands">
                             </div>
@@ -286,7 +291,7 @@
                     <div class="flex flex-col gap-4 items-center">
                         <h3
                             class="text-center text-white text-[64px] lg:text-8xl font-medium leading-none font-Grotesk relative">
-                            +170k
+                            170k
                             <span
                                 class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
@@ -314,7 +319,7 @@
                     <div class="flex flex-col gap-4 items-center">
                         <h3
                             class="text-center text-white text-[64px] lg:text-8xl font-medium leading-none font-Grotesk relative">
-                            +600
+                            600
                             <span
                                 class="absolute start-full top-0 rounded-full p-1 border border-green-success-02-primary bg-green-success-00 w-8 h-8">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
@@ -326,12 +331,16 @@
                     </div>
                 </div>
 
+
+
                 <div
                     class="bg-Component-Fill-Card shadow-Category-card backdrop-blur-[10px] rounded-3xl lg:rounded-[40px] p-10 lg:p-20 relative min-h-[820px] lg:min-h-[720px] flex flex-col gap-14 lg:gap-[120px] overflow-hidden">
                     <img src="assets/images/cat-card.png" width="656" height="720" alt="categories"
                         class="absolute end-0 bottom-0">
                     <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
                         class="absolute -rotate-45 top-20 -start-[460px] -z-[1] max-w-max opacity-40">
+                    <img src="assets/images/cat-card-Illustration.svg" class="absolute top-[10%] left-[40%]" width="384"
+                        height="384" alt="Illustration">
                     <div class="flex flex-col gap-28 relative">
                         <div class="grid grid-cols-1 lg:grid-cols-12">
                             <div class="flex flex-col items-center lg:items-start gap-10 lg:col-span-4">
@@ -380,7 +389,6 @@
 
         <!-- ========================================================================== -->
 
-
         <!-- RESAL FEATURES SECTION  -->
         <section class="py-14 lg:py-[120px] px-5 lg:px-0 overflow-hidden">
             <div class="container flex flex-col gap-10 lg:gap-[120px]">
@@ -399,7 +407,7 @@
                             <img src="assets/images/reward.png" width="529" height="389" alt="reward"
                                 class="absolute bottom-10 left-1/2 -translate-x-1/2">
                             <img src="assets/images/reward-shape.png" width="180" height="120" alt="reward"
-                                class="absolute bottom-96 end-10 reward-shape">
+                                class="absolute bottom-96 end-10 reward-shape solution-icon">
                             <div class="flex flex-col gap-10 items-center lg:items-start relative">
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     Reward
@@ -431,6 +439,10 @@
                                 class="absolute -rotate-90 top-[165px] start-[200px] -z-[1] max-w-max opacity-40">
                             <img src="assets/images/point-replacement.png" width="660" height="461"
                                 alt="point-replacement" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+                            <div class="solution-icon absolute bottom-[25%] left-[25%]">
+                                <img src="assets/images/hero-icon-2.png" width="120" height="120" alt="hero-icon">
+                            </div>
+
                             <div class="flex flex-col gap-10 items-center lg:items-start relative">
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     Redeem
@@ -458,6 +470,14 @@
 
                         <!-- Solution Item  -->
                         <div class="solution-itm h-[640px] lg:h-[560px] relative overflow-hidden">
+                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
+                                class="absolute rotate-[120deg] -top-[930px] -end-[430px] -z-[1] max-w-max opacity-40">
+                            <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
+                                class="absolute -top-6 -end-72 opacity-40 -z-[1]">
+                            <div class="solution-icon absolute top-[10%] right-[10%] -z-[1]">
+                                <img src="assets/images/preserving-icon.png" width="128" height="128"
+                                    alt="preserving-icon">
+                            </div>
                             <div class="flex flex-col gap-10 items-center lg:items-start grow">
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     retain
@@ -480,11 +500,6 @@
                                         alt="Arrow">
                                 </a>
                             </div>
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute rotate-[120deg] -top-[930px] -end-[430px] -z-[1] max-w-max opacity-40">
-                            <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
-                                class="absolute -top-6 -end-72 opacity-40 -z-[1]">
-
                         </div>
 
                         <!-- Solution Item  -->
@@ -493,6 +508,10 @@
                                 class="absolute rotate-[143deg] -top-[920px] -end-[540px] -z-[1] max-w-max opacity-40">
                             <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
                                 class="absolute -top-1/2 -end-44 opacity-40 -z-[1]">
+                            <div class="solution-icon absolute top-[20%] right-[10%] -z-[1]">
+                                <img src="assets/images/recovery-icon.png" width="128" height="128"
+                                    alt="recovery--icon">
+                            </div>
                             <div class="flex flex-col gap-10 items-center lg:items-start grow relative">
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     refund
@@ -614,6 +633,7 @@
         <!-- END FEATURES SECTION   -->
 
         <!-- ========================================================================== -->
+
     </main>
     <!-- END RESAL MAIN PAGE CONTENT  -->
 
@@ -812,6 +832,7 @@
     <!-- ============================================================================== -->
     <!-- SCRIPTS  -->
     <script src="assets/js/jquiry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/scripts.js"></script>
 
