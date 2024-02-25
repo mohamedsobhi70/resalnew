@@ -2,7 +2,7 @@ if ($(".mobile-menu-btn").length > 0) {
     $(".mobile-menu-btn").on("click", function () {
         let path = document.getElementById('linePath');
         var newPath = (path.getAttribute('d') === "M4 6H20M4 12H20M4 18H20") ? "M18 6L6 18M18 18L6 6.00001" : "M4 6H20M4 12H20M4 18H20";
-        gsap.fromTo(path, {attr: {d: path.getAttribute('d')}}, {duration: .4, attr: {d: newPath}});
+        gsap.fromTo(path, { attr: { d: path.getAttribute('d') } }, { duration: .4, attr: { d: newPath } });
         $(".mobile-menu").toggleClass("show");
         $("body").toggleClass("overflow-hidden");
     })
@@ -59,6 +59,66 @@ if ($(".awards-slider").length > 0) {
                     spaceBetween: 80,
                     centeredSlides: false,
                     loop: false,
+                },
+            },
+        });
+    });
+}
+
+if ($(".customers-slider").length > 0) {
+    const sliders = document.querySelectorAll(".customers-slider");
+
+    sliders.forEach(function (slider) {
+        new Swiper(slider, {
+            slidesPerView: 'auto',
+            centerInsufficientSlides: true,
+            centeredSlidesBounds: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                    loop: true,
+                },
+                768: {
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                    loop: true,
+
+                },
+                1024: {
+                    spaceBetween: 80,
+                    centeredSlides: false,
+                    loop: false,
+                },
+            },
+        });
+    });
+}
+
+if ($(".testimonials-slider").length > 0) {
+    const sliders = document.querySelectorAll(".testimonials-slider");
+
+    sliders.forEach(function (slider) {
+        new Swiper(slider, {
+            centeredSlides: true,
+            spaceBetween: 40,
+            loop: true,
+            navigation: {
+                nextEl: slider.querySelector('.swiper-button-next'),
+                prevEl: slider.querySelector('.swiper-button-prev'),
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+
+                },
+                1024: {
+                    slidesPerView: 1.3,
                 },
             },
         });
