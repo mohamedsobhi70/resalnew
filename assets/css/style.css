@@ -532,6 +532,12 @@ body {
   background-image: linear-gradient(97deg, #29c3cb -4.64%, #06888f 75.91%);
 }
 
+.merchant-theme .btn-primary {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background: linear-gradient(95deg, #12D1EB -30.67%, #3757FF 57.5%, #7622E2 104.59%);
+}
+
 .btn-primary:not(:disabled):before {
   position: absolute;
   top: 0px;
@@ -2143,8 +2149,24 @@ body {
   bottom: -150px;
 }
 
+.-bottom-\[260px\] {
+  bottom: -260px;
+}
+
 .-bottom-\[282px\] {
   bottom: -282px;
+}
+
+.-bottom-\[343px\] {
+  bottom: -343px;
+}
+
+.-bottom-\[450px\] {
+  bottom: -450px;
+}
+
+.-bottom-\[500px\] {
+  bottom: -500px;
 }
 
 .-bottom-\[532px\] {
@@ -2191,6 +2213,10 @@ body {
   left: -1044px;
 }
 
+.-left-\[127px\] {
+  left: -127px;
+}
+
 .-left-\[250px\] {
   left: -250px;
 }
@@ -2219,8 +2245,20 @@ body {
   right: -10rem;
 }
 
+.-right-\[1100px\] {
+  right: -1100px;
+}
+
 .-right-\[206px\] {
   right: -206px;
+}
+
+.-right-\[250px\] {
+  right: -250px;
+}
+
+.-right-\[30px\] {
+  right: -30px;
 }
 
 .-start-\[240px\] {
@@ -2243,8 +2281,16 @@ body {
   top: -14rem;
 }
 
+.-top-\[1060px\] {
+  top: -1060px;
+}
+
 .-top-\[1440px\] {
   top: -1440px;
+}
+
+.-top-\[150px\] {
+  top: -150px;
 }
 
 .-top-\[250px\] {
@@ -2255,8 +2301,16 @@ body {
   top: -260px;
 }
 
+.-top-\[33px\] {
+  top: -33px;
+}
+
 .-top-\[343px\] {
   top: -343px;
+}
+
+.-top-\[500px\] {
+  top: -500px;
 }
 
 .bottom-0 {
@@ -2273,6 +2327,10 @@ body {
 
 .bottom-\[25\%\] {
   bottom: 25%;
+}
+
+.bottom-\[72px\] {
+  bottom: 72px;
 }
 
 .end-0 {
@@ -2373,6 +2431,10 @@ body {
 
 .top-\[174px\] {
   top: 174px;
+}
+
+.top-\[250px\] {
+  top: 250px;
 }
 
 .top-\[328px\] {
@@ -2485,6 +2547,10 @@ body {
   height: 1081px;
 }
 
+.h-\[1288px\] {
+  height: 1288px;
+}
+
 .h-\[240px\] {
   height: 240px;
 }
@@ -2499,6 +2565,10 @@ body {
 
 .h-\[720px\] {
   height: 720px;
+}
+
+.h-\[871px\] {
+  height: 871px;
 }
 
 .h-auto {
@@ -2527,6 +2597,10 @@ body {
 
 .w-\[120px\] {
   width: 120px;
+}
+
+.w-\[1288px\] {
+  width: 1288px;
 }
 
 .w-\[150\%\] {
@@ -2565,6 +2639,10 @@ body {
   width: 68px;
 }
 
+.w-\[871px\] {
+  width: 871px;
+}
+
 .w-\[887px\] {
   width: 887px;
 }
@@ -2584,6 +2662,10 @@ body {
 
 .min-w-\[650px\] {
   min-width: 650px;
+}
+
+.max-w-\[2382px\] {
+  max-width: 2382px;
 }
 
 .max-w-\[529px\] {
@@ -2638,6 +2720,11 @@ body {
 
 .-rotate-90 {
   --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[60deg\] {
+  --tw-rotate: -60deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2763,12 +2850,24 @@ body {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#2000DA3D\] {
+  background-color: #2000DA3D;
+}
+
 .bg-\[\#2525FF7A\] {
   background-color: #2525FF7A;
 }
 
+.bg-\[\#2DC4CC47\] {
+  background-color: #2DC4CC47;
+}
+
 .bg-\[\#2DC4CCA3\] {
   background-color: #2DC4CCA3;
+}
+
+.bg-\[\#5209CFA3\] {
+  background-color: #5209CFA3;
 }
 
 .bg-hero-box {
@@ -2844,6 +2943,11 @@ body {
 .py-\[120px\] {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pe-10 {
@@ -2979,6 +3083,16 @@ body {
 
 .blur-\[200px\] {
   --tw-blur: blur(200px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[320px\] {
+  --tw-blur: blur(320px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[400px\] {
+  --tw-blur: blur(400px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
