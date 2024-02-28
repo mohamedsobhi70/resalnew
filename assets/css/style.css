@@ -535,7 +535,12 @@ body {
 .merchant-theme .btn-primary {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  background: linear-gradient(95deg, #12D1EB -30.67%, #3757FF 57.5%, #7622E2 104.59%);
+  background: linear-gradient(
+      95deg,
+      #12d1eb -30.67%,
+      #3757ff 57.5%,
+      #7622e2 104.59%
+    );
 }
 
 .btn-primary:not(:disabled):before {
@@ -909,6 +914,155 @@ body {
   .hero-section {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+.hero-section .hero-icn-1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-color: #333c4e66;
+  padding: 1.25rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 1024px) {
+  .hero-section .hero-icn-1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 1.5rem;
+  }
+}
+
+.hero-section .hero-icn-1 {
+  background: linear-gradient(
+      ba(17, 17, 101deg, rg17, 0.04) 5.2%,
+      rgba(30, 30, 30, 0.04) 87.8%
+    );
+  box-shadow: -5px 14px 64px #4b4bc7;
+}
+
+.hero-section .hero-icn-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  display: flex;
+  height: 74px;
+  width: 112px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-color: #333c4e66;
+  padding: 1.25rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 1024px) {
+  .hero-section .hero-icn-2 {
+    height: 120px;
+    width: 180px;
+    border-radius: 1.5rem;
+  }
+}
+
+.hero-section .hero-icn-2 {
+  background: linear-gradient(
+      101deg,
+      rgba(17, 17, 17, 0.04) 5.2%,
+      rgba(30, 30, 30, 0.04) 87.8%
+    );
+}
+
+.hero-section .hero-icn-3 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  display: flex;
+  height: 62px;
+  width: 62px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 1024px) {
+  .hero-section .hero-icn-3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 1.5rem;
+  }
+}
+
+.hero-section .hero-icn-4 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: flex;
+  height: 68px;
+  width: 68px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 1024px) {
+  .hero-section .hero-icn-4 {
+    height: 110px;
+    width: 110px;
+    border-radius: 1.5rem;
+  }
+}
+
+.hero-section .hero-icn-5 {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  display: flex;
+  height: 61px;
+  width: 61px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 1024px) {
+  .hero-section .hero-icn-5 {
+    height: 98px;
+    width: 98px;
+    border-radius: 1.5rem;
   }
 }
 
@@ -1868,6 +2022,9 @@ body {
   border-width: 1px;
   border-color: #333c4e66;
   padding: 1.25rem;
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 @media (min-width: 1024px) {
@@ -1883,8 +2040,6 @@ body {
       ba(17, 17, 101deg, rg17, 0.04) 5.2%,
       rgba(30, 30, 30, 0.04) 87.8%
     );
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
 }
 
 .marketing-hero-icn-3 {
@@ -2185,6 +2340,14 @@ body {
   bottom: -830px;
 }
 
+.-bottom-\[900px\] {
+  bottom: -900px;
+}
+
+.-end-10 {
+  inset-inline-end: -2.5rem;
+}
+
 .-end-\[20px\] {
   inset-inline-end: -20px;
 }
@@ -2225,12 +2388,16 @@ body {
   left: -260px;
 }
 
-.-left-\[656px\] {
-  left: -656px;
+.-left-\[40px\] {
+  left: -40px;
 }
 
-.-right-10 {
-  right: -2.5rem;
+.-left-\[500px\] {
+  left: -500px;
+}
+
+.-left-\[656px\] {
+  left: -656px;
 }
 
 .-right-14 {
@@ -2283,6 +2450,10 @@ body {
 
 .-top-\[1060px\] {
   top: -1060px;
+}
+
+.-top-\[108px\] {
+  top: -108px;
 }
 
 .-top-\[1440px\] {
@@ -2369,6 +2540,10 @@ body {
   left: 60%;
 }
 
+.left-\[600px\] {
+  left: 600px;
+}
+
 .left-\[70\%\] {
   left: 70%;
 }
@@ -2423,6 +2598,10 @@ body {
 
 .top-40 {
   top: 10rem;
+}
+
+.top-\[128px\] {
+  top: 128px;
 }
 
 .top-\[165px\] {
@@ -2491,10 +2670,6 @@ body {
 
 .top-\[800px\] {
   top: 800px;
-}
-
-.-end-10 {
-  inset-inline-end: -2.5rem;
 }
 
 .-z-\[1\] {
@@ -2623,8 +2798,20 @@ body {
   width: 200px;
 }
 
+.w-\[32px\] {
+  width: 32px;
+}
+
 .w-\[369px\] {
   width: 369px;
+}
+
+.w-\[36px\] {
+  width: 36px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[43px\] {
@@ -2633,6 +2820,10 @@ body {
 
 .w-\[550px\] {
   width: 550px;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .w-\[62px\] {
@@ -2709,6 +2900,16 @@ body {
 
 .translate-y-1\/2 {
   --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1 {
+  --tw-translate-x: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-12 {
+  --tw-translate-x: -3rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2842,6 +3043,11 @@ body {
 .border-\[\#697899\] {
   --tw-border-opacity: 1;
   border-color: rgb(105 120 153 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-Blue-00 {
@@ -3107,6 +3313,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-end-16 {
+    inset-inline-end: -4rem;
+  }
+
   .lg\:-end-28 {
     inset-inline-end: -7rem;
   }
@@ -3117,10 +3327,6 @@ body {
 
   .lg\:-left-\[389px\] {
     left: -389px;
-  }
-
-  .lg\:-right-16 {
-    right: -4rem;
   }
 
   .lg\:-right-\[100px\] {
@@ -3179,10 +3385,6 @@ body {
     top: 20%;
   }
 
-  .lg\:-end-16 {
-    inset-inline-end: -4rem;
-  }
-
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3237,6 +3439,10 @@ body {
     height: 360px;
   }
 
+  .lg\:h-\[554px\] {
+    height: 554px;
+  }
+
   .lg\:h-\[560px\] {
     height: 560px;
   }
@@ -3255,6 +3461,10 @@ body {
 
   .lg\:w-\[535px\] {
     width: 535px;
+  }
+
+  .lg\:w-\[554px\] {
+    width: 554px;
   }
 
   .lg\:w-\[65px\] {
