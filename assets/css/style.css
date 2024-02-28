@@ -2672,6 +2672,10 @@ body {
   top: 800px;
 }
 
+.-right-\[20px\] {
+  right: -20px;
+}
+
 .-z-\[1\] {
   z-index: -1;
 }
@@ -2878,6 +2882,10 @@ body {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[550px\] {
+  max-width: 550px;
 }
 
 .shrink-0 {
@@ -3383,6 +3391,10 @@ body {
 
   .lg\:top-\[20\%\] {
     top: 20%;
+  }
+
+  .lg\:-end-\[100px\] {
+    inset-inline-end: -100px;
   }
 
   .lg\:col-span-2 {
