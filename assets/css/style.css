@@ -2493,6 +2493,10 @@ body {
   top: 800px;
 }
 
+.-end-10 {
+  inset-inline-end: -2.5rem;
+}
+
 .-z-\[1\] {
   z-index: -1;
 }
@@ -2940,14 +2944,14 @@ body {
   padding-bottom: 0.75rem;
 }
 
-.py-\[120px\] {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .pe-10 {
@@ -3173,6 +3177,10 @@ body {
 
   .lg\:top-\[20\%\] {
     top: 20%;
+  }
+
+  .lg\:-end-16 {
+    inset-inline-end: -4rem;
   }
 
   .lg\:col-span-2 {
