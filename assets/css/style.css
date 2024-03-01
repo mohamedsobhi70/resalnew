@@ -931,7 +931,8 @@ body {
   justify-content: center;
   border-radius: 1rem;
   border-width: 1px;
-  border-color: #333c4e66;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
   padding: 1.25rem;
   --tw-backdrop-blur: blur(20px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -965,7 +966,8 @@ body {
   justify-content: center;
   border-radius: 1rem;
   border-width: 1px;
-  border-color: #333c4e66;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
   padding: 1.25rem;
   --tw-backdrop-blur: blur(20px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -3290,6 +3292,10 @@ body {
   max-width: 2382px;
 }
 
+.max-w-\[490px\] {
+  max-width: 490px;
+}
+
 .max-w-\[529px\] {
   max-width: 529px;
 }
@@ -3979,6 +3985,10 @@ body {
     height: 360px;
   }
 
+  .lg\:h-\[490px\] {
+    height: 490px;
+  }
+
   .lg\:h-\[554px\] {
     height: 554px;
   }
@@ -4005,6 +4015,10 @@ body {
 
   .lg\:w-\[120px\] {
     width: 120px;
+  }
+
+  .lg\:w-\[460px\] {
+    width: 460px;
   }
 
   .lg\:w-\[535px\] {
