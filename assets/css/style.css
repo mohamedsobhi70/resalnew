@@ -494,6 +494,29 @@ body {
   font-family: LT, sans-serif;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  line-height: 116%;
+  letter-spacing: 0.36px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1;
+    line-height: 116%;
+  }
+}
+
+.section-heading:where([dir="ltr"], [dir="ltr"] *) {
+  font-family: HKGroteskWide, sans-serif;
+}
+
 .excerpt {
   font-weight: 300;
   line-height: 152%;
