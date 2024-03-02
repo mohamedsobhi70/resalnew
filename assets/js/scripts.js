@@ -212,7 +212,7 @@ if ($(".resal-team-container").length > 0) {
         // Generate pagination buttons
         pagination.innerHTML = '';
         const prevButton = document.createElement('button');
-        prevButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        prevButton.innerHTML = `<svg class="rtl:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14 6L8.70708 11.2929C8.31655 11.6834 8.31655 12.3166 8.70708 12.7071L14 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
         </svg>
         `;
@@ -241,7 +241,7 @@ if ($(".resal-team-container").length > 0) {
 
         const nextButton = document.createElement('button');
         nextButton.innerHTML = `
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="rtl:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </svg>
 
