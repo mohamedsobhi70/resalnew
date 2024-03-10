@@ -1272,6 +1272,8 @@ body {
 
 .resal-footer .scan-code-sec {
   display: none;
+  height: 100%;
+  max-width: 375px;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
