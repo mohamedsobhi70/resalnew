@@ -767,8 +767,8 @@ body {
 @media (min-width: 1280px) {
   .resal-header {
     top: 2.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -925,7 +925,6 @@ body {
 
 .hero-section {
   position: relative;
-  min-height: 100vh;
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 137 / var(--tw-bg-opacity));
@@ -962,7 +961,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero-section .hero-icn-1 {
     height: 120px;
     width: 120px;
@@ -997,7 +996,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero-section .hero-icn-2 {
     height: 120px;
     width: 180px;
@@ -1031,7 +1030,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero-section .hero-icn-3 {
     height: 100px;
     width: 100px;
@@ -1057,7 +1056,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero-section .hero-icn-4 {
     height: 110px;
     width: 110px;
@@ -1083,7 +1082,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero-section .hero-icn-5 {
     height: 98px;
     width: 98px;
@@ -3228,6 +3227,14 @@ body {
   min-height: 555px;
 }
 
+.min-h-\[650px\] {
+  min-height: 650px;
+}
+
+.min-h-\[620px\] {
+  min-height: 620px;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -3356,6 +3363,11 @@ body {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[70\%\] {
+  --tw-translate-x: -70%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3675,6 +3687,11 @@ body {
   padding-bottom: 120px;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -3697,6 +3714,10 @@ body {
 
 .pt-\[128px\] {
   padding-top: 128px;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
@@ -3990,6 +4011,14 @@ body {
     margin-top: auto;
   }
 
+  .lg\:me-20 {
+    margin-inline-end: 5rem;
+  }
+
+  .lg\:me-28 {
+    margin-inline-end: 7rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4008,6 +4037,10 @@ body {
 
   .lg\:h-\[360px\] {
     height: 360px;
+  }
+
+  .lg\:h-\[454px\] {
+    height: 454px;
   }
 
   .lg\:h-\[490px\] {
@@ -4040,6 +4073,10 @@ body {
 
   .lg\:w-\[120px\] {
     width: 120px;
+  }
+
+  .lg\:w-\[454px\] {
+    width: 454px;
   }
 
   .lg\:w-\[460px\] {
@@ -4229,6 +4266,10 @@ body {
     padding-top: 240px;
   }
 
+  .lg\:pt-40 {
+    padding-top: 10rem;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
@@ -4271,6 +4312,32 @@ body {
 
   .lg\:leading-\[128\%\] {
     line-height: 128%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:me-0 {
+    margin-inline-end: 0px;
+  }
+
+  .xl\:h-\[554px\] {
+    height: 554px;
+  }
+
+  .xl\:w-\[554px\] {
+    width: 554px;
+  }
+
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .xl\:text-\[64px\] {
+    font-size: 64px;
   }
 }
 
