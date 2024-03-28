@@ -687,7 +687,7 @@ body {
   transition-duration: 300ms;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .mobile-menu {
     visibility: visible;
     position: static;
@@ -718,7 +718,7 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .mobile-menu-btn {
     display: none;
   }
@@ -764,7 +764,7 @@ body {
   padding-right: 1.25rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resal-header {
     top: 2.5rem;
     padding-left: 2.5rem;
@@ -781,7 +781,7 @@ body {
   border-color: rgb(71 74 110 / var(--tw-border-opacity));
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resal-header .header-container {
     border-radius: 9999px;
     border-width: 1px;
@@ -821,7 +821,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resal-header .logo-container {
     width: auto;
     border-radius: 0px;
@@ -855,7 +855,7 @@ body {
   gap: 2.5rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resal-header .res-nav-list {
     flex-direction: row;
     gap: 1.5rem;
@@ -891,7 +891,7 @@ body {
   padding-bottom: 2.5rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .resal-header .language-container {
     width: auto;
     gap: 0.5rem;
