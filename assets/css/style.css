@@ -3223,16 +3223,20 @@ body {
   height: 100%;
 }
 
+.h-\[454px\] {
+  height: 454px;
+}
+
 .min-h-\[555px\] {
   min-height: 555px;
 }
 
-.min-h-\[650px\] {
-  min-height: 650px;
-}
-
 .min-h-\[620px\] {
   min-height: 620px;
+}
+
+.min-h-\[520px\] {
+  min-height: 520px;
 }
 
 .w-20 {
@@ -3310,6 +3314,10 @@ body {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[454px\] {
+  width: 454px;
 }
 
 .min-w-\[650px\] {
@@ -3687,11 +3695,6 @@ body {
   padding-bottom: 120px;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -3714,10 +3717,6 @@ body {
 
 .pt-\[128px\] {
   padding-top: 128px;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .text-center {
@@ -4003,20 +4002,16 @@ body {
     margin-right: 0px;
   }
 
+  .lg\:me-28 {
+    margin-inline-end: 7rem;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
   }
 
   .lg\:mt-auto {
     margin-top: auto;
-  }
-
-  .lg\:me-20 {
-    margin-inline-end: 5rem;
-  }
-
-  .lg\:me-28 {
-    margin-inline-end: 7rem;
   }
 
   .lg\:block {
@@ -4065,6 +4060,10 @@ body {
 
   .lg\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .lg\:min-h-\[620px\] {
+    min-height: 620px;
   }
 
   .lg\:w-\[1045px\] {
@@ -4264,10 +4263,6 @@ body {
 
   .lg\:pt-\[240px\] {
     padding-top: 240px;
-  }
-
-  .lg\:pt-40 {
-    padding-top: 10rem;
   }
 
   .lg\:text-start {
