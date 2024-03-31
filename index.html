@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css" />
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Resal - Home Page</title>
@@ -349,8 +351,8 @@
                 <div class="grid lg:grid-cols-3 gap-14 lg:gap-10">
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="numbers-heading">
-                            <span class="odometer">
-                                170
+                            <span class="odometer" data-to-value="170">
+                                0
                             </span>k
                             <span class="numbers-icon">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
@@ -363,8 +365,8 @@
                     </div>
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="numbers-heading ">
-                            <span class="odometer">
-                                750
+                            <span class="odometer" data-to-value="750">
+                                0
                             </span>
                             <span class="numbers-icon">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
@@ -377,8 +379,8 @@
                     </div>
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="numbers-heading">
-                            +<span class="odometer">
-                                600
+                            +<span class="odometer" data-to-value="600">
+                                0
                             </span>
                             <span class="numbers-icon">
                                 <img src="assets/images/icons/up.svg" width="24" height="24" alt="up arrow">
@@ -890,14 +892,10 @@
     <script src="assets/js/jquiry.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-        $(".odometer").counterUp({
-            time: 1200
-        })
-    </script>
+ 
 
 </body>
 

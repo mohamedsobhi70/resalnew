@@ -188,6 +188,29 @@ if ($("#back-top").length > 0) {
     })
 }
 
+if ($(".odometer").length > 0) {
+    document.querySelectorAll('.odometer').forEach(el => {
+        let $count = (el.getAttribute("data-to-value"))
+            ? el.getAttribute("data-to-value") : '0',
+            waypoint = new Waypoint({
+                element: el,
+                handler: function () {
+                    let od = new Odometer({
+                        el: el,
+                        value: $count,
+                        format: 'd',
+                    });
+
+                    od.update($count);
+                    this.destroy();
+                },
+                offset: '95%',
+            });
+
+    });
+
+}
+
 if ($(".resal-team-container").length > 0) {
     // Function to paginate team members on mobile screens
     function paginateTeamOnMobile(pageNumber) {
