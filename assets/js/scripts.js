@@ -197,14 +197,15 @@ if ($(".odometer").length > 0) {
                 handler: function () {
                     let od = new Odometer({
                         el: el,
-                        value: $count,
-                        format: 'd',
+                        value: $count,  
+                        format: 'd'
+
                     });
 
                     od.update($count);
                     this.destroy();
                 },
-                offset: '95%',
+                offset: '90%',
             });
 
     });
