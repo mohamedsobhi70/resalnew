@@ -494,6 +494,13 @@ body {
   font-family: LT, sans-serif;
 }
 
+h1,
+  h2,
+  h3,
+  h4 {
+  font-feature-settings: "ss01" on;
+}
+
 .circle-shape {
   position: absolute;
   top: 50%;
@@ -3275,6 +3282,10 @@ body {
   top: 50%;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -3397,10 +3408,6 @@ body {
 
 .top-\[90\%\] {
   top: 90%;
-}
-
-.top-10 {
-  top: 2.5rem;
 }
 
 .-z-\[1\] {
@@ -3656,6 +3663,10 @@ body {
 
 .min-w-\[650px\] {
   min-width: 650px;
+}
+
+.max-w-\[1360px\] {
+  max-width: 1360px;
 }
 
 .max-w-\[1368px\] {
