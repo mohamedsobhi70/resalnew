@@ -569,20 +569,19 @@ h1,
 }
 
 .bussiness-theme .btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 195 203 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  background-image: linear-gradient(97deg, #29c3cb -4.64%, #06888f 75.91%);
+  background-image: none;
 }
 
 .merchant-theme .btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 87 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  background: linear-gradient(
-      95deg,
-      #12d1eb -30.67%,
-      #3757ff 57.5%,
-      #7622e2 104.59%
-    );
+  background-image: none;
 }
 
 .btn-primary:not(:disabled):before {
@@ -1945,9 +1944,6 @@ h1,
   justify-content: center;
   overflow: hidden;
   border-radius: 1.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(51 60 78 / var(--tw-border-opacity));
   padding: 18px;
   --tw-backdrop-blur: blur(20px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1957,6 +1953,8 @@ h1,
       rgba(17, 17, 17, 0.04) 5.2%,
       rgba(30, 30, 30, 0.04) 87.8%
     );
+  box-shadow: -0.5px -0.5px 0px rgba(255, 255, 255, 0.64),
+      0.6px 0.6px 0px rgba(227, 227, 227, 0.09);
 }
 
 .api-card {
@@ -2183,6 +2181,10 @@ h1,
 /* busiiness page  */
 
 .loyalty-program-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(58 71 99 / var(--tw-border-opacity));
@@ -2192,27 +2194,14 @@ h1,
 
 .loyalty-program-item:first-child {
   border-top-width: 0px;
-  padding-top: 0px;
-}
-
-.loyalty-program-item:last-child {
-  padding-bottom: 0px;
 }
 
 @media (min-width: 1024px) {
   .loyalty-program-item {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .loyalty-program-item:first-child {
-    padding-top: 5rem;
-  }
-
-  .loyalty-program-item:last-child {
-    padding-bottom: 5rem;
   }
 
   .loyalty-program-item:nth-child(odd) {
@@ -3447,10 +3436,6 @@ h1,
 
 .-mb-4 {
   margin-bottom: -1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-auto {
