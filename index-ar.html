@@ -8,21 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>رسال - الصفحة الرئيسية</title>
 </head>
 
 <body>
+
     <!-- RESAL HEADER  -->
     <header class="resal-header">
         <div class="container header-container">
 
             <div class="logo-container">
                 <!-- Resal Logo  -->
-                <a href="index.html">
+                <a href="index-ar.html">
                     <img src="assets/images/logo.svg" class="w-20 lg:w-auto" width="111" height="28" alt="Resal">
                     <span class="sr-only">RESAL LOGO</span>
                 </a>
@@ -89,17 +89,6 @@
                 </nav>
 
                 <div class="language-container">
-
-                    <!-- Languae Menu -->
-                    <a href="index.html" class="language-menu">
-                        <span class="rounded-full overflow-hidden w-6 h-6 border border-white">
-                            <img src="assets/images/englishflag.png" width="24" height="24" alt="arabicflag">
-                        </span>
-                        <span class="pt-1">
-                            English
-                        </span>
-                    </a>
-
                     <!-- Register Button  -->
                     <a href="#" class="btn-primary px-4 py-3 gap-4 grow">
 
@@ -111,6 +100,16 @@
                             class="rtl:rotate-180"> -->
 
                     </a>
+                    <a href="index.html"
+                        class="grow py-3 px-4 text-white font-medium leading-none flex items-center justify-center gap-2">
+                        <span class="rounded-full overflow-hidden w-6 h-6 border border-white">
+                            <img src="assets/images/englishflag.png" width="24" height="24" alt="arabicflag">
+                        </span>
+                        <span class="pt-1">
+                            English
+                        </span>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -121,14 +120,41 @@
 
     <!-- RESAL MAIN PAGE CONTENT  -->
     <main>
+        <!-- Page Loader  -->
+        <div id="loader"
+            class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-50 px-10 bg-[#12131D]">
+            <img src="assets/images/rect/hero-left-rect.webp" width="1055" height="851" alt="rect"
+                class="absolute bottom-0 left-0">
+            <img src="assets/images/rect/hero-left-rect.webp" width="1055" height="851" alt="rect"
+                class="absolute top-0 right-0 -scale-100">
+            <svg width="444" height="112" viewBox="0 0 111 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="loader-path"
+                    d="M27.3441 5.58228C20.8133 5.58228 15.9229 10.3533 15.9229 16.6816C15.9229 23.0099 20.8896 27.7733 27.4738 27.7733C29.9533 27.7733 32.2955 27.1168 34.2563 25.8573C36.0797 24.6817 37.4988 23.0481 38.3685 21.1168H33.4628C32.2574 22.8496 30.0067 23.9107 27.5653 23.9107C24.0939 23.9107 21.4008 21.8038 20.6836 18.5442L20.6226 18.3H38.7119C38.7805 17.8267 38.811 17.1625 38.811 16.7198H38.8263C38.8263 10.3686 33.8977 5.58228 27.3517 5.58228H27.3441ZM20.6531 14.8037L20.7294 14.5442C21.5839 11.4449 24.1779 9.44491 27.3517 9.44491C30.5255 9.44491 33.2263 11.4984 34.0198 14.5442L34.0961 14.8037H20.6607H20.6531Z"
+                    fill="white" />
+                <path class="loader-path"
+                    d="M6.75964 11.0709C5.77545 11.9259 5.36346 13.2007 5.36346 14.4755V27.7657H0V5.60522H5.22614V8.46785L5.71442 7.91822C6.72913 6.77317 8.9035 5.60522 11.467 5.60522C13.6719 5.60522 15.1978 6.13958 16.6626 7.4373L13.9084 11.8419C12.9852 10.9412 11.9171 10.2618 10.6201 10.1244C10.2386 10.0862 9.84955 10.0709 9.46045 10.0862C8.47626 10.132 7.51495 10.4068 6.75964 11.0709Z"
+                    fill="white" />
+                <path class="loader-path"
+                    d="M50.7283 27.7655C56.4656 27.7655 60.6389 24.9868 60.6389 21.1471C60.6389 17.9257 57.7702 15.8264 51.8651 14.7425C48.1801 14.1012 46.3109 13.0402 46.3109 11.5821C46.3109 10.1241 48.1572 9.04011 50.6138 9.04011C53.0705 9.04011 55.077 10.2691 55.077 11.8951V12.002H60.1582V11.8951C60.1582 8.26148 56.0688 5.521 50.652 5.521C45.2351 5.521 41.222 8.19278 41.222 11.8646C41.222 15.0173 44.1822 17.2768 49.5533 18.2387C53.5588 18.9333 55.5119 20.002 55.5119 21.4982C55.5119 23.0708 53.4901 24.2616 50.8122 24.2616C48.1343 24.2616 45.8302 22.8876 45.8302 21.1318V21.025H40.749V21.1318C40.749 24.9258 45.0444 27.7807 50.7359 27.7807"
+                    fill="white" />
+                <path class="loader-path"
+                    d="M89.6224 23.6053C88.1652 23.6053 86.9826 23.4374 87.0513 20.903V5.58228H82.3134V9.80369L81.9548 9.3533C80.0246 6.9258 77.1636 5.58228 73.9058 5.58228H73.8906C67.4437 5.58228 62.5762 10.3457 62.5762 16.674C62.5762 23.0023 67.4437 27.7733 73.8906 27.7733C77.2475 27.7733 80.2687 26.2848 82.1685 23.7122L82.4126 23.3763L82.5194 23.7733C83.1374 26.0557 85.1516 27.7657 88.3406 27.7657H89.6071V23.6053H89.6224ZM74.3941 23.6053C70.4421 23.6053 67.459 20.6206 67.459 16.6663C67.459 12.7121 70.4421 9.73499 74.3941 9.73499C78.3461 9.73499 81.2835 12.7197 81.2835 16.6663C81.2835 20.6129 78.3309 23.6053 74.3941 23.6053Z"
+                    fill="white" />
+                <path class="loader-path"
+                    d="M108.887 22.4831C108.887 22.4831 107.208 23.8648 105.125 23.7579C103.645 23.6816 103.34 23.3152 103.34 23.3152C103.34 23.3152 108.215 18.2311 108.52 9.68907C108.772 2.85694 104.881 0.192797 101.166 0.0095894C97.4121 -0.181252 93.3456 2.46763 92.7581 8.7425C91.9799 17.0708 96.9085 23.1625 96.9085 23.1625C96.9085 23.1625 96.0693 23.7732 93.3227 23.6052V27.7656C93.3227 27.7656 97.5875 27.9488 99.9832 26.2617C101.036 27.0709 102.966 28.2618 106.087 27.9488C108.757 27.6816 111 26.1549 111 26.1549L108.879 22.4754L108.887 22.4831ZM100.25 20.5212C99.0982 18.9487 97.5418 15.1777 97.5418 10.6891C97.5418 7.95623 98.2894 5.03254 100.937 5.21574C103.447 5.38369 103.828 8.26921 103.577 10.941C103.157 15.483 101.639 19.0403 100.243 20.5289L100.25 20.5212Z"
+                    fill="white" />
+            </svg>
+
+        </div>
 
         <!-- RESAL HERO SECTION  -->
         <section class="hero-section xl:pt-40">
-
-            <img src="assets/images/circle-rect-1.png" width="1710" height="1710" alt="rectangle"
-                class="absolute top-20 left-[800px] max-w-max opacity-65">
-            <img src="assets/images/circle-rect-1.png" width="1710" height="1710" alt="rectangle"
-                class="absolute top-20 -left-[656px] max-w-max opacity-65">
+            <!-- Effects  -->
+            <img src="assets/images/rect/hero-left-rect.webp" width="1055" height="851" alt="rect"
+                class="absolute bottom-0 left-0">
+            <img src="assets/images/rect/hero-right-rect.webp" width="629" height="851" alt="rect"
+                class="absolute bottom-0 right-0">
+            <!-- End Effects  -->
 
             <div class="container grid lg:grid-cols-12 grow relative">
 
@@ -173,13 +199,12 @@
                     <!--  Icons   -->
                     <div
                         class="absolute max-w-[550px] w-[454px] h-[454px]  xl:w-[554px] xl:h-[554px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-
-                        <!-- <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
-                            class="w-full h-full"> -->
+                        <!-- Circles Shapes -->
                         <span class="circle-shape w-[140px] h-[140px] md:w-[224px] md:h-[224px] rotate-90"></span>
                         <span class="circle-shape w-[210px] h-[210px] md:w-[338px] md:h-[338px] rotate-180"></span>
                         <span class="circle-shape w-[263px] h-[263px] md:w-[422px] md:h-[422px] -rotate-45"></span>
                         <span class="circle-shape w-[345px] h-[345px] md:w-[554px] md:h-[554px] rotate-180"></span>
+                        <!-- End Circles Shapes -->
 
                         <span class="hero-icn-1">
                             <img src="assets/images/icons/hero-icon-1.svg" width="56" height="73" alt="hero-icn"
@@ -210,223 +235,206 @@
 
         <!-- ========================================================================== -->
 
-        <!-- RESAL CATEGORIES SECTION  -->
-        <section class="py-14 lg:py-[120px] px-5 lg:px-0 relative overflow-hidden">
-            <div class="container flex flex-col gap-10 lg:gap-[120px]">
-                <span
-                    class="w-[1081px] h-[1081px] rounded-full absolute top-[800px] left-1/2 -translate-x-1/2 bg-[#2525FF7A] blur-[200px]"></span>
-                <span
-                    class="w-[550px] h-[550px] rounded-full absolute top-[800px] left-1/2  bg-[#2DC4CCA3] blur-[200px]"></span>
+        <!-- RESAL Logos SECTION  -->
+        <section
+            class="pt-14 lg:pt-[120px] px-5 lg:px-0 relative overflow-hidden max-h-[500px] md:max-h-[700px] lg:max-h-[878px]">
+            <!-- Effect  -->
+            <span
+                class="absolute rounded-full blur-[200px] w-[887px] h-[887px] bg-[#0409C952] left-1/2 -translate-x-1/2 -bottom-[195px]"></span>
+            <!-- End Effect  -->
+            <div class="flex flex-col relative">
+                <h2 class="section-heading">
+                    أكثر من 600 علامة تجارية
+                    <br>
+                    يشرفنا تواجدنا في رسال
+                </h2>
 
-                <div class="flex flex-col">
-                    <h2 class="section-heading">
-                        أكثر من 600 علامة تجارية
-                        <br>
-                        يشرفنا تواجدنا في رسال
-                    </h2>
-                    <div class="flex flex-col brands">
-                        <div
-                            class="relative overflow-hidden pt-8 lg:pt-0 h-[360px] md:h-[450px] lg:h-[620px] -mx-5 lg:mx-0">
-                            <div
-                                class="w-[150%] lg:w-full relative rtl:left-full left-1/2 rtl:lg:left-1/2 -translate-x-1/2">
-                                <img src="assets/images/rotation.svg" width="1440" height="1440" alt="circle"
-                                    class="w-full rotation-circ">
+                <div class="flex flex-col brands">
+                    <div class=" relative overflow-hidden pt-8 lg:pt-0 -mx-5 lg:mx-0">
+                        <div class="max-w-[1360px] w-[150%] lg:w-full relative -mx-[25%] lg:mx-auto">
+                            <img src="assets/images/rotation.svg" width="1440" height="1440" alt="circle"
+                                class="w-full rotation-circ">
 
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[9%] start-[18%]">
-                                        <img src="assets/images/award-1.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[42%] start-[22%]">
-                                        <img src="assets/images//award-2.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[80%] start-[72%]">
-                                        <img src="assets/images//award-3.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[40%] start-[68%]">
-                                        <img src="assets/images//award-4.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[10%] start-[72%]">
-                                        <img src="assets/images//award-5.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[80%] start-[20%]">
-                                        <img src="assets/images//award-6.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[22%] start-[21%]">
-                                        <img src="assets/images/brand-1.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[35%] start-[2%]">
-                                        <img src="assets/images/brand-2.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[23%] start-[40%]">
-                                        <img src="assets/images/brand-3.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[33%] start-[87%]">
-                                        <img src="assets/images/brand-4.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm  top-[1%] start-[48%]">
-                                        <img src="assets/images/brand-5.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[53%] start-[13%]">
-                                        <img src="assets/images/brand-6.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[53%] start-[77%]">
-                                        <img src="assets/images/brand-7.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm  top-[67%] start-[38%]">
-                                        <img src="assets/images/brand-8.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[65%] start-[55%]">
-                                        <img src="assets/images//brand-9.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[90%] start-[45%]">
-                                        <img src="assets/images//brand-10.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[16%] start-[61%]">
-                                        <img src="assets/images//brand-11.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                                <div class="absolute top-0 left-0 w-full h-full animate-brands">
-                                    <span class="brand-itm top-[61%] start-[86%]">
-                                        <img src="assets/images//brand-12.webp" class="w-20 lg:w-[120px]" width="120"
-                                            height="120" alt="Brands">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="categories-container">
-                            <!-- Category item  -->
-                            <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-center lg:items-start">
-                                    <div class="category-icon">
-                                        <img src="assets/images/icons/phone.svg" width="64" height="64" alt="Phone">
-                                    </div>
-                                    <div class="flex flex-col gap-4">
-                                        <h3
-                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
-                                            تطبيق رسال
-                                        </h3>
-                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
-                                            تطبيق رسال أكبر منصة للبطاقات الرقمية، يجمع بين استبدال واكتساب نقاط برامج
-                                            الولاء وشراء البطاقات الرقمية
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
-                                    <span class="pt-1">
-                                        اعرف المزيد
-                                    </span>
-                                    <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
-                                        alt="Arrow" class="rtl:rotate-180"> -->
-                                </a>
-                            </div>
-
-                            <!-- Category item  -->
-                            <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-center lg:items-start">
-                                    <div class="category-icon">
-
-                                        <img src="assets/images/icons/bussiness.svg" width="64" height="64" alt="Phone">
-                                    </div>
-                                    <div class="flex flex-col gap-4">
-                                        <h3
-                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
-                                            حلول الأعمال
-                                        </h3>
-                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
-                                            حلول رقمية مبتكرة تمكّن المنشآت من إرسال وتتبع وإدارة المكافات الرقمية
-                                            لتحقيق أعلى مستويات الكفاءة
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
-                                    <span class="pt-1">
-                                        اعرف المزيد
-                                    </span>
-                                    <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
-                                        alt="Arrow" class="rtl:rotate-180"> -->
-                                </a>
-                            </div>
-
-                            <!-- Category item  -->
-                            <div class="category-itm">
-                                <div class="flex flex-col gap-10 items-center lg:items-start">
-                                    <div class="category-icon">
-
-                                        <img src="assets/images/icons/merchant.svg" width="64" height="64" alt="Phone">
-                                    </div>
-                                    <div class="flex flex-col gap-4">
-                                        <h3
-                                            class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
-                                            حلول التجار
-                                        </h3>
-                                        <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
-                                            أفضل منصة رقمية تمكنك من بناء برنامج ولاء لعلامتك التجارية لزيادة مبيعاتك
-                                            وكسب ولاء عملائك
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
-                                    <span class="pt-1">
-                                        اعرف المزيد
-                                    </span>
-                                    <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
-                                        alt="Arrow" class="rtl:rotate-180"> -->
-                                </a>
+                            <div class="absolute top-0 left-0 w-full h-full animate-brands">
+                                <span class="brand-itm top-[9%] start-[18%]">
+                                    <img src="assets/images/award-1.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[80%] start-[72%]">
+                                    <img src="assets/images//award-3.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[42%] start-[22%]">
+                                    <img src="assets/images//award-2.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[40%] start-[68%]">
+                                    <img src="assets/images//award-4.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[10%] start-[72%]">
+                                    <img src="assets/images//award-5.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[80%] start-[20%]">
+                                    <img src="assets/images//award-6.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[22%] start-[21%]">
+                                    <img src="assets/images/brand-1.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[35%] start-[2%]">
+                                    <img src="assets/images/brand-2.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[23%] start-[40%]">
+                                    <img src="assets/images/brand-3.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[33%] start-[87%]">
+                                    <img src="assets/images/brand-4.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm  top-[1%] start-[48%]">
+                                    <img src="assets/images/brand-5.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[53%] start-[13%]">
+                                    <img src="assets/images/brand-6.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[53%] start-[77%]">
+                                    <img src="assets/images/brand-7.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm  top-[67%] start-[38%]">
+                                    <img src="assets/images/brand-8.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[65%] start-[55%]">
+                                    <img src="assets/images//brand-9.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[90%] start-[45%]">
+                                    <img src="assets/images//brand-10.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[16%] start-[61%]">
+                                    <img src="assets/images//brand-11.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
+                                <span class="brand-itm top-[61%] start-[86%]">
+                                    <img src="assets/images//brand-12.webp" class="w-20 lg:w-[120px]" width="120"
+                                        height="120" alt="Brands">
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- END Logos SECTION   -->
 
+        <!-- ========================================================================== -->
+
+        <!-- RESAL CATEGORIES SECTION  -->
+        <section class="pb-14 lg:pb-[120px] px-5 lg:px-0 relative overflow-hidden">
+            <div class="container flex flex-col gap-10 lg:gap-[120px]">
+                <!-- Effects  -->
+                <span
+                    class="w-[1081px] h-[1081px] rounded-full absolute top-0 left-1/2 -translate-x-1/2 bg-[#2525FF7A] blur-[400px]"></span>
+                <span
+                    class="w-[1081px] h-[1081px] rounded-full absolute -bottom-[875px] left-1/2 -translate-x-1/2 bg-[#2525FF7A] blur-[400px]"></span>
+                <span
+                    class="w-[550px] h-[550px] rounded-full absolute top-20 left-1/2 bg-[#2DC4CC47] blur-[200px]"></span>
+                <!-- End Effects  -->
+
+                <!-- Categories  -->
+                <div class="categories-container">
+                    <!-- Category item  -->
+                    <div class="category-itm">
+                        <div class="flex flex-col gap-10 items-center lg:items-start">
+                            <div class="category-icon">
+                                <img src="assets/images/icons/phone.svg" width="64" height="64" alt="Phone">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3
+                                    class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
+                                    تطبيق رسال
+                                </h3>
+                                <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
+                                    تطبيق رسال أكبر منصة للبطاقات الرقمية، يجمع بين استبدال واكتساب نقاط برامج
+                                    الولاء وشراء البطاقات الرقمية
+                                </p>
+                            </div>
+
+                        </div>
+                        <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
+                            <span class="pt-1">
+                                اعرف المزيد
+                            </span>
+                            <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
+                                                alt="Arrow" class="rtl:rotate-180"> -->
+                        </a>
+                    </div>
+
+                    <!-- Category item  -->
+                    <div class="category-itm">
+                        <div class="flex flex-col gap-10 items-center lg:items-start">
+                            <div class="category-icon">
+
+                                <img src="assets/images/icons/bussiness.svg" width="64" height="64" alt="Phone">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3
+                                    class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
+                                    حلول الأعمال
+                                </h3>
+                                <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
+                                    حلول رقمية مبتكرة تمكّن المنشآت من إرسال وتتبع وإدارة المكافات الرقمية
+                                    لتحقيق أعلى مستويات الكفاءة
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
+                            <span class="pt-1">
+                                اعرف المزيد
+                            </span>
+                            <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
+                                                alt="Arrow" class="rtl:rotate-180"> -->
+                        </a>
+                    </div>
+
+                    <!-- Category item  -->
+                    <div class="category-itm">
+                        <div class="flex flex-col gap-10 items-center lg:items-start">
+                            <div class="category-icon">
+
+                                <img src="assets/images/icons/merchant.svg" width="64" height="64" alt="Phone">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h3
+                                    class="text-white text-xl lg:text-2xl font-medium font-Grotesk text-center lg:text-start">
+                                    حلول التجار
+                                </h3>
+                                <p class="text-Neutral-Light-Grey font-light text-center lg:text-start">
+                                    أفضل منصة رقمية تمكنك من بناء برنامج ولاء لعلامتك التجارية لزيادة مبيعاتك
+                                    وكسب ولاء عملائك
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4">
+                            <span class="pt-1">
+                                اعرف المزيد
+                            </span>
+                            <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
+                                                alt="Arrow" class="rtl:rotate-180"> -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Numbers  -->
                 <div class="grid lg:grid-cols-3 gap-14 lg:gap-10 relative">
                     <div class="flex flex-col gap-4 items-center">
                         <h3 class="numbers-heading">
@@ -440,7 +448,7 @@
                             </span>
                         </h3>
                         <p class="numbers-text">
-                            عدد الزبائن 
+                            عدد الزبائن
                             "فرادى"
                         </p>
                     </div>
@@ -454,7 +462,7 @@
                             </span>
                         </h3>
                         <p class="numbers-text">
-                            عدد الزبائن 
+                            عدد الزبائن
                             في حلول الأعمال + التجار
                         </p>
                     </div>
@@ -473,16 +481,16 @@
                     </div>
                 </div>
 
+                <!-- Portfolio -->
                 <div class="portfolio-card">
                     <img src="assets/images/cat-card.webp" width="656" height="720" alt="categories"
                         class="absolute end-0 bottom-0">
-                    <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                        class="absolute -rotate-45 top-20 -start-[460px] -z-[1] max-w-max opacity-40">
-
+                    <img src="assets/images/rect/portfolio-rect.webp" width="1166" height="720" alt="rect"
+                        class="absolute start-0 bottom-0 rtl:-scale-x-100">
 
                     <!-- <img src="assets/images/cat-card-Illustration.svg"
-                        class="absolute left-0 top-[72%] lg:top-[10%] lg:left-[40%] w-[200px] lg:w-auto " width="384"
-                        height="384" alt="Illustration"> -->
+                                            class="absolute left-0 top-[72%] lg:top-[10%] lg:left-[40%] w-[200px] lg:w-auto " width="384"
+                                            height="384" alt="Illustration"> -->
 
 
                     <div class="flex flex-col gap-28 relative">
@@ -507,6 +515,7 @@
                             <div class="swiper-wrapper items-center z-10">
                                 <div class="swiper-slide">
                                     بطاقات مسبقة الدفع
+
                                 </div>
                                 <div class="swiper-slide">
                                     أميال
@@ -559,28 +568,32 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- END CATEGORIES SECTION   -->
 
         <!-- ========================================================================== -->
 
-        <!-- RESAL FEATURES SECTION  -->
-        <section class="py-14 lg:py-[120px] px-5 lg:px-0 overflow-hidden">
-            <div class="container flex flex-col gap-10 lg:gap-[120px]">
-                <div class="flex flex-col gap-10 lg:gap-28">
+        <!-- RESAL Solutions SECTION  -->
+        <section class="relative pt-14 lg:pt-[120px] px-5 lg:px-0 ">
+            <div class="container flex flex-col gap-3 lg:gap-10">
+                <div class="flex flex-col gap-20">
                     <h2 class="section-heading">
                         حلول متكاملة لقطاع الأفراد والأعمال
-
                     </h2>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
 
                         <!-- Solution Item  -->
                         <div class="solution-itm min-h-[720px] lg:min-h-[1000px] relative overflow-hidden">
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute -rotate-90 top-[500px] -start-[240px] -z-[1] max-w-max opacity-40">
+
+                            <img src="assets/images/rect/sol-rect-1.webp" width="462" height="844" alt="rectangle"
+                                class="absolute bottom-0 w-full left-0">
+
                             <img src="assets/images/reward.webp" width="529" height="389" alt="reward"
                                 class="absolute bottom-10 left-1/2 -translate-x-1/2">
-                            <span class="sol-icon absolute top-10 end-10 w-[120px] lg:w-[180px]">
+
+                            <span
+                                class="sol-icon absolute bottom-60 end-6 lg:bottom-auto lg:top-10 lg:end-10 w-[120px] lg:w-[180px]">
                                 <img src="assets/images/icons/reward-sol.svg" width="70" height="80" alt="reward">
                             </span>
 
@@ -611,12 +624,14 @@
 
                         <!-- Solution Item  -->
                         <div class="solution-itm min-h-[720px] lg:min-h-[1000px] relative overflow-hidden">
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute -rotate-90 top-[165px] start-[200px] -z-[1] max-w-max opacity-40">
+                            <img src="assets/images/rect/sol-rect-2.webp" width="660" height="500" alt="rectangle"
+                                class="absolute bottom-0 right-0">
                             <img src="assets/images/point-replacement.webp" width="660" height="461"
-                                alt="point-replacement" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+                                alt="point-replacement"
+                                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full rtl:-scale-x-100">
 
-                            <span class="sol-icon absolute top-10 end-10">
+                            <span
+                                class="sol-icon absolute bottom-32 start-20 lg:start-auto lg:bottom-auto lg:top-10 lg:end-10 ">
                                 <img src="assets/images/icons/PointReplacement-sol.svg" width="60" height="60"
                                     alt="point-replacement">
                             </span>
@@ -647,15 +662,16 @@
 
                         <!-- Solution Item  -->
                         <div class="solution-itm min-h-[640px] lg:min-h-[560px] relative overflow-hidden">
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute -rotate-90 lg:rotate-[120deg] top-[174px] lg:-top-[930px] -end-[430px] -z-[1] max-w-max opacity-40">
+                            <img src="assets/images/rect/sol-rect-3.webp" width="660" height="560" alt="rectangle"
+                                class="absolute rotate-180 lg:rotate-0 lg:bottom-auto bottom-0 lg:top-0 left-0 object-cover w-full">
                             <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
                                 class="absolute lg:-top-6 lg:-end-72 opacity-40 -z-[1] bottom-0 translate-y-1/2 lg:translate-y-0 lg:bottom-auto">
-                            <span class="sol-icon absolute top-10 end-10">
+                            <span
+                                class="sol-icon absolute lg:top-10 lg:end-10 bottom-16 lg:bottom-auto left-1/2 ltr:lg:left-auto -translate-x-1/2 lg:translate-x-0">
                                 <img src="assets/images/icons/PointReplacement-sol.svg" width="60" height="60"
                                     alt="point-replacement">
                             </span>
-                            <div class="flex flex-col gap-10 items-center lg:items-start grow">
+                            <div class="flex flex-col gap-10 items-center lg:items-start grow relative">
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     يحتفظ
                                 </span>
@@ -681,11 +697,12 @@
 
                         <!-- Solution Item  -->
                         <div class="solution-itm min-h-[640px] lg:min-h-[560px] relative overflow-hidden">
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute -rotate-90 lg:rotate-[143deg] top-[174px] lg:-top-[920px] -end-[540px] -z-[1] max-w-max opacity-40">
+                            <img src="assets/images/rect/sol-rect-4.webp" width="660" height="560" alt="rectangle"
+                                class="absolute rotate-180 lg:rotate-0 lg:bottom-auto bottom-0 lg:top-0 left-0 object-cover w-full">
                             <img src="assets/images/hero-circles.png" width="554" height="554" alt="circle"
-                                class="absolute lg:-top-1/2 -lg:end-44 opacity-40 -z-[1]  bottom-0 translate-y-1/2 lg:translate-y-0 lg:bottom-auto">
-                            <span class="sol-icon absolute top-10 end-10">
+                                class="absolute lg:-top-1/2 -lg:end-44 opacity-40 bottom-0 translate-y-1/2 lg:translate-y-0 lg:bottom-auto">
+                            <span
+                                class="sol-icon absolute lg:top-10 lg:end-10 bottom-16 lg:bottom-auto left-1/2 ltr:lg:left-auto -translate-x-1/2 lg:translate-x-0">
                                 <img src="assets/images/icons/PointReplacement-sol.svg" width="60" height="60"
                                     alt="point-replacement">
                             </span>
@@ -716,12 +733,14 @@
                         </div>
 
                         <!-- Solution Item  -->
-                        <div
-                            class="solution-itm grid grid-cols-1 lg:grid-cols-2 gap-8 relative overflow-hidden lg:col-span-2">
-                            <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-                                class="absolute -rotate-90 -end-[500px] -z-[1] opacity-40">
+                        <div class="solution-itm h-[720px] lg:h-[560px] relative overflow-hidden lg:col-span-2">
+                            <img src="assets/images/rect/sol-rect-5.webp" width="960" height="520" alt="rectangle"
+                                class="absolute bottom-0 end-0 rtl:-scale-x-100">
+                            <img src="assets/images/appreciation-hand.webp" width="535" height="536" alt="circles"
+                                class="absolute bottom-0 left-1/2 lg:left-auto lg:translate-x-0 -translate-x-1/2 lg:end-0 w-[369px] lg:w-[535px]">
 
                             <div class="flex flex-col gap-10 items-center lg:items-start relative">
+
                                 <span class="resal-badge p-4 lg:p-5 rounded-2xl">
                                     تعرُّف
                                 </span>
@@ -741,26 +760,21 @@
                                     </span>
                                     <!-- <img src="assets/images/icons/arrow-right-white.svg" width="24" height="24"
                                         alt="Arrow" class="rtl:rotate-180"> -->
-
                                 </a>
                             </div>
-                            <div class="flex justify-center lg:justify-end">
-                                <img src="assets/images/appreciation-hand.webp" width="535" height="536" alt="circles"
-                                    class="-mb-10 lg:-mb-20 ">
-                            </div>
+
                         </div>
 
                     </div>
                 </div>
-
                 <div class="cta">
-                    <img src="assets/images/circle-rect-1.png" width="882" height="882" alt="rectangle"
-                        class="cta-shape opacity-65">
+                    <img src="assets/images/rect/CTA-rect.webp" width="1036" height="136" alt="rect"
+                        class="absolute top-0 end-0 h-full object-cover">
                     <h3
                         class="text-white text-2xl lg:text-[32px] leading-[128%] font-medium font-Grotesk text-center lg:text-start grow relative">
                         اعرف المزيد حول رسال
                     </h3>
-                    <a href="about-ar.html" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4 shrink-0 relative">
+                    <a href="about.html" class="btn-secondary px-4 py-3 lg:px-5 lg:py-4 shrink-0 relative">
                         <span class="pt-1">
                             حول رسال
                         </span>
@@ -768,50 +782,56 @@
                             class="rtl:rotate-180"> -->
                     </a>
                 </div>
+            </div>
+        </section>
+        <!-- END Solutions SECTION   -->
 
-                <div class="flex flex-col gap-10">
-                    <h3
-                        class="text-center text-2xl lg:text-[32px] text-white font-medium font-Grotesk leading-[120%] tracking-[0.24px]">
-                        الجوائز والشهادات التي حصلنا عليها
-                    </h3>
-                    <div class="swiper awards-slider px-10 lg:px-0 relative -mx-5 lg:mx-0">
-                        <div class="swiper-wrapper items-center z-10">
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-1.webp" width="120" height="120" alt="award-1">
-                                </div>
+        <!-- ========================================================================== -->
+
+        <!-- RESAL Awards and Certificates SECTION  -->
+        <section class="py-14 lg:py-[120px]">
+            <div class="container flex flex-col gap-10">
+                <h2
+                    class=" px-5 lg:px-0 text-center text-2xl lg:text-[32px] text-white font-medium font-Grotesk leading-[120%] tracking-[0.24px]">
+                    الجوائز والشهادات التي حصلنا عليها
+                </h2>
+                <div class="swiper awards-slider px-10 lg:px-0 relative">
+                    <div class="swiper-wrapper items-center z-10">
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-1.webp" width="120" height="120" alt="award-1">
                             </div>
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-2.webp" width="120" height="120" alt="award-1">
-                                </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-2.webp" width="120" height="120" alt="award-1">
                             </div>
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-3.webp" width="120" height="120" alt="award-1">
-                                </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-3.webp" width="120" height="120" alt="award-1">
                             </div>
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-4.webp" width="120" height="120" alt="award-1">
-                                </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-4.webp" width="120" height="120" alt="award-1">
                             </div>
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-5.webp" width="120" height="120" alt="award-1">
-                                </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-5.webp" width="120" height="120" alt="award-1">
                             </div>
-                            <div class="swiper-slide w-auto">
-                                <div class="award-container">
-                                    <img src="assets/images/award-6.webp" width="120" height="120" alt="award-1">
-                                </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="award-container">
+                                <img src="assets/images/award-6.webp" width="120" height="120" alt="award-1">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- END FEATURES SECTION   -->
+        <!-- END Awards and Certificates SECTION   -->
 
         <!-- ========================================================================== -->
 
@@ -822,9 +842,17 @@
 
     <!-- RESAL FOOTER  -->
     <footer class="resal-footer">
+        <!-- Effects  -->
+        <img src="assets/images/rect/footer-rect.webp" width="770" height="820" alt="rectangle"
+            class="absolute bottom-0 right-0">
+        <span
+            class="absolute rounded-full blur-[200px] w-[1081px] h-[1081px] bg-[#5B5BFF66] -right-[270px] -top-[675px]"></span>
+        <span
+            class="absolute rounded-full blur-[200px] w-[550px] h-[550px] bg-[#2DC4CCC7] right-[218px] -top-[592px]"></span>
+        <span
+            class="absolute rounded-full blur-[200px] w-[1081px] h-[1081px] bg-[#00003D66] -left-[477px] top-[107px]"></span>
+        <!-- End Effects  -->
 
-        <img src="assets/images/circle-rect-1.png" width="1352" height="1352" alt="rectangle"
-            class="absolute -bottom-[532px] -end-[582px]  max-w-max opacity-40">
 
         <div class="container grid lg:grid-cols-3 gap-14 xl:gap-[120px] relative">
             <div class="col-span-1 flex flex-col gap-3 lg:gap-20 items-center lg:items-start">
@@ -862,7 +890,6 @@
                         مسح الباركود وتنزيله
                         <br>
                         تطبيق رسال
-
                     </p>
                     <div class="excerpt text-center">
                         رساله متاحه للاستخدام
@@ -871,6 +898,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-span-1 lg:col-span-2 flex flex-col gap-14 lg:gap-[116px]">
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-20">
                     <div class="flex flex-col gap-6 items-center lg:items-stretch">
@@ -945,7 +973,7 @@
                     <div class="flex flex-col gap-6 items-center lg:items-stretch">
                         <p
                             class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
-                            سياسة الخصوصية
+                            مصادر
                         </p>
                         <ul class="flex flex-col gap-6 items-center lg:items-stretch">
                             <li>
@@ -968,7 +996,7 @@
                     <div class="flex flex-col gap-6 items-center lg:items-stretch">
                         <p
                             class="text-white font-Grotesk text-xl lg:text-2xl font-medium leading-[128%] lg:leading-[128%]">
-                            مصادر
+                            سياسة الخصوصية
                         </p>
                         <ul class="flex flex-col gap-6 items-center lg:items-stretch">
                             <li>
@@ -1000,34 +1028,24 @@
             </div>
         </div>
 
-
         <div id="back-top">
             <button class="back-totop">
                 <img src="assets/images/icons/backtotop.svg" width="24" height="24" alt="back-totop">
                 <span class="sr-only">Back To Top Button</span>
             </button>
         </div>
+
     </footer>
     <!-- END RESAL FOOTER  -->
 
     <!-- ============================================================================== -->
     <!-- SCRIPTS  -->
     <script src="assets/js/jquiry.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/odometer.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <!-- <script>
-        waypoint = new Waypoint({
-            element: ".brands",
-            handler: function () {
-                gsap.from(".rotation-circ", { duration: 1.5, opacity: 0, scale: 0})
-                gsap.from(".animate-brands img", { duration: .6, delay: 1.5, x: -100, y: -100, opacity: 0, scale: 0, stagger: .1 })
-            },
-            offset: '85%',
-        });
-    </script> -->
 
 </body>
 

@@ -1,10 +1,36 @@
+if ($('#loader')) {
+    gsap.from(".loader-path", {
+        duration: 1.3,
+        y: 35,
+        transformOrigin: "50% 50%",
+        opacity: 0,
+        scale: 0.5,
+        stagger: {
+            each: 0.2, from: "random"
+        }
+    })
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('#loader').fadeOut('slow');
+        }, 2000);
+    });
+}
+
 if ($(".mobile-menu-btn").length > 0) {
     $(".mobile-menu-btn").on("click", function () {
+
         let path = document.getElementById('linePath');
-        var newPath = (path.getAttribute('d') === "M4 6H20M4 12H20M4 18H20") ? "M18 6L6 18M18 18L6 6.00001" : "M4 6H20M4 12H20M4 18H20";
+        let newPath = (path.getAttribute('d') === "M4 6H20M4 12H20M4 18H20") ? "M18 6L6 18M18 18L6 6.00001" : "M4 6H20M4 12H20M4 18H20";
         gsap.fromTo(path, { attr: { d: path.getAttribute('d') } }, { duration: .4, attr: { d: newPath } });
         $(".mobile-menu").toggleClass("show");
-        $("body").toggleClass("overflow-hidden");
+
+        if ($(".mobile-menu").hasClass("show")) {
+            $("body").addClass("overflow-hidden");
+        } else {
+            $("body").removeClass("overflow-hidden");
+
+        }
+
     })
 }
 
@@ -197,7 +223,7 @@ if ($(".odometer").length > 0) {
                 handler: function () {
                     let od = new Odometer({
                         el: el,
-                        value: $count,  
+                        value: $count,
                         format: 'd'
 
                     });
