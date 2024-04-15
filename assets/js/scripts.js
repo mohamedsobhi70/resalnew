@@ -1,4 +1,4 @@
-if ($('#loader')) {
+if ($('#loader').length > 0) {
     gsap.from(".loader-path", {
         duration: 1.3,
         y: 35,
@@ -15,6 +15,25 @@ if ($('#loader')) {
         }, 2000);
     });
 }
+
+    if ($(".res-nav-item").length > 0) {
+        $(".res-nav-item").on("mouseenter", function () {
+            if ($(window).width() >= 1360) {
+                $(this).find(".dropdown-menu").fadeIn(200);
+                // $(this).find(".dropdown-menu").addClass("show");
+            }
+        }).on("mouseleave", function () {
+            if ($(window).width() >= 1360) {
+                $(this).find(".dropdown-menu").fadeOut(200);
+            }
+            
+        }).on("click", function () {
+            if ($(window).width() < 1360) {
+                $(this).siblings().find(".dropdown-menu").slideUp(250);
+                $(this).find(".dropdown-menu").slideToggle(250);
+            }
+        });
+    }
 
 if ($(".mobile-menu-btn").length > 0) {
     $(".mobile-menu-btn").on("click", function () {
