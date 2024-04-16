@@ -19,12 +19,12 @@ if ($('#loader').length > 0) {
     if ($(".res-nav-item").length > 0) {
         $(".res-nav-item").on("mouseenter", function () {
             if ($(window).width() >= 1360) {
-                $(this).find(".dropdown-menu").fadeIn(200);
-                // $(this).find(".dropdown-menu").addClass("show");
+                $(this).find(".dropdown-menu").fadeIn(20);
+                // 20 because of lamp effect issue
             }
         }).on("mouseleave", function () {
             if ($(window).width() >= 1360) {
-                $(this).find(".dropdown-menu").fadeOut(200);
+                $(this).find(".dropdown-menu").fadeOut(20);
             }
             
         }).on("click", function () {
