@@ -34,7 +34,6 @@ if ($(".res-nav-item").length > 0) {
         }
     });
 }
-
 if ($(".menu-item").length > 0) {
     $('.menu-item-has-children .sub-menu').wrap('<div class="dropdown-menu"></div>');
 
